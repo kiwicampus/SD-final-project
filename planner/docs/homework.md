@@ -50,52 +50,17 @@ If you complete python points you'll have the robot moving in the map without so
 6. **Implement/Trapezoidal turn profile**- package: [`graphics`](https://github.com/kiwicampus/2D-Test-Track-Service-Desk-Project/tree/main/planner/ROS2/src/path_planner), Node: [`node_planner.py`](https://github.com/kiwicampus/2D-Test-Track-Service-Desk-Project/tree/main/planner/ROS2/src/path_planner/path_planner/node_planner.py) -> Implement the function `get_profile_turn` to get a list of waypoints for a trapezoidal turn profile to get the points and the times where and when the robot should be pointing. You can not add more input or output arguments to the function. You can follow the method and operations explained in this link: https://www.linearmotiontips.com/how-to-generate-motion-profile-for-linear-system/ . And read carefully the instructions and the documentation in the function.
 
 
-### *C++* 
+### *Information Management* 
 
-First of all, you need to modify `planner/configs/startPlanner.sh` and `planner/configs/nodes_launch.yaml` files to build the Interfaces node. 
+For the second part of the basics we want to assess the use of apis and information management, as well as written communication, problem solving, reporting skills and learn new technologies quickly and effectively, you can make use of online tutorials to guide you, however you will do it when you are working :)
 
-  1. Look for the line:
+1. **Generate GCP credentials:** If you don't have an account generate one, you don't need to have billing activated, it will only be used in a basic way, the credentials can be saved anywhere you want.
 
-  ```.bash
-  colcon build --symlink-install --packages-skip interfaces
-  ```
+2. **Authenticate credentials:** You must analyze the stack and decide in which scripts you must authenticate the credentials to be able to use the api later, keep in mind that the place you choose is because you want to get/upload information to google sheets.
 
-  2. Change it for:  
-  
-  ```.bash
-  colcon build --symlink-install
-  ```
+3. **Upload information to google sheet:** You must add a piece of code where you think it should go (be careful not to break anything), this code must add a new line in a google sheet every time a routine is started, the following information must be loaded: id (routine number), date, time, routine id, total distance, total time.
 
-  3. Identify the `NODE_INTERFACES` object on the `planner/configs/nodes_launch.yaml` file: 
-
-  ```.yaml
-  NODE_INTERFACES:
-  launch: 0
-  node_executable: interfaces_node
-  output: screen
-  package: interfaces
-  ```
-
-  4. Change launch parameter: 
-  
-  ```.yaml
-  NODE_INTERFACES:
-  launch: 1
-  node_executable: interfaces_node
-  output: screen
-  package: interfaces
-  ```
-
-Don't worry this will fail, but that is part of the below exercises.
-
-1.  **Create a subscriber inside the speaker node** - package: [`interfaces`](https://github.com/kiwicampus/2D-Test-Track-Service-Desk-Project/tree/main/planner/ros2/src/interfaces) file to modify: `interfaces/src/modules/speaker.cpp` -> Implement a subscriber `Amazing Speaker Subscriber` type: `std_msgs::msg::Int8` related to the CallBack Function `speakerCb`, the publisher come from `node_planner` and publish a Int8 message to indicated which track will play. **Note:** Use the `m_speaker_sub` defined in the .hpp file to create your subscriber.
-
-2. **Create a publisher inside the speaker node** - package: [`interfaces`](https://github.com/kiwicampus/2D-Test-Track-Service-Desk-Project/tree/main/planner/ros2/src/interfaces) file to modify: `interfaces/src/modules/speaker.hpp` -> Define a publisher `Amazing Speaker Publisher` type: `std_msgs::msg::Bool` call it ```m_done_pub```. 
-
-3. **Publish a Bool message using the previous publisher created** - package: [`interfaces`](https://github.com/kiwicampus/2D-Test-Track-Service-Desk-Project/tree/main/planner/ros2/src/interfaces) file to modify: `interfaces/src/modules/speaker.cpp` -> Use the documentation provided and your logic to discover how to publish a UniquePtr message in a simple publisher, which publish a True value each time a sound is ended and False each time a sound begin. Use the publisher called `m_done_pub`.
-
-4. **Create a condition when a file isn't found** - package: [`interfaces`](https://github.com/kiwicampus/2D-Test-Track-Service-Desk-Project/tree/main/planner/ros2/src/interfaces) file to modify: `interfaces/src/modules/speaker.cpp` -> When a sound track isn't found, play the default sound called `track2` located in the same folder as the another ones. You could test this point using `ros2 topic pub -1 /device/speaker/command std_msgs/Int8 "data: 2"`.
-
+4. **Make a report:** You should make a report explaining briefly what you did, the resources you used and all the necessary information you think we need to verify the result, it should not be a line by line explanation of what you did, just a description of the result, what you used and how we can access the information you saved. You can use any means and in the most assertive way to show it, just keep in mind that you must provide us with a way to see it for us.
 
 If you finish successfully all the points, you must have a window like this (with sounds included): 
 
@@ -124,7 +89,7 @@ If you finish successfully all the points, you must have a window like this (wit
     * **[30%/5]** Pair programming Interview
     * **[40%/5]** Final Project
 10. We'll select the 3 best candidates by their grades, and we'll make the final decision with the Ai&Team.
-11. We are evaluating your concepts and knowledge in ROS2, Python, C++, Some basic control concepts, other Code stuff.
+11. We are evaluating your concepts and knowledge in ROS2, Python, api's, Some basic control concepts, other Code stuff.
 12. If no participant send the project before the dead line time, we will extend the deadline date and time, for everyone, with just person that complete the questionary and the basic-points the rest are doomed, but also if we considered that the solutions received are not enough or not well explained we also can extend the deadline, but we are pretty sure that this wont happened.
 
 ---
@@ -135,25 +100,30 @@ Respond below every questions:
 
 1. [Python] Why the robot's image gets distorted when is turning?
 
-2. [Python] are Python packages compiled as C++ packages?
+2. [Python] Are Python packages compiled as C++ packages?
 
 3. [Python] Why with some code errors in some nodes the logs are not printed?
 
-4. [Control] What other turn or speed profile would you implement, why, and what are the benefits?
+4. [Python] Why there are variables that begin with _?
 
-5. [C++] What is the mean of the number "15" used in the pthread_kill inside the destructor method?
+5. [Python] Why do you put _ after the variable cols in this line?
+    ```
+    rows, cols, _ = self._kiwibot_img.shape
+    ```
+6. [API's] What would happen if we try to update the google sheet table every new execution frame?
 
-6. [C++] Why are we using UniquePointer instead of SharedPointers to publish a ROS2 message?
+7. [API's] What happens if we change some element of the google sheets sheet for example: file name, time name, sheet position, etc?
 
-7. [C++] Why are we using a m_multi_sound variable? Explain ...
+8. [Docker] Explain with your own words what is the instructions `apt-get autoremove && apt-get clean -y for?`
 
-8. [C++] Why are we freeing the memory allocated by raw pointer "buff" variable and not freeing the memory allocated by the Shared and Unique Pointers? (HARD)
+9. [Docker] If you modify a layer what happen with the previous and the next ones?
 
-10. [Docker] Explain with your own words what is the instructions `apt-get autoremove && apt-get clean -y for?`
+10. [Docker] Can we change the basic image (`FROM ubuntu:20.04`) from the docker file to another?
 
-11. [Docker] If you modify a layer what happen with the previous and the next ones?
+11. [General] Why is one of the sounds distorted?
 
-12. [Docker] Can we change the basic image (`FROM ubuntu:20.04`) from the docker file to another?
+12. [General] Why is it not a good idea to upload the api credentials to github and why if they are already uploaded is it not a good idea to simply delete them?
+
 
 Next questions is after you finish the project, it doesn't give points but we really appreciate you feedback:
 * What do you think about this project? is it hard or enough? is it to complicated, is it well structure, explanations and instructions are clear?
@@ -165,19 +135,25 @@ Next questions is after you finish the project, it doesn't give points but we re
 For extra homework we recommend you create a new branch from the developed one when you finish the basic points of the homework, you can name this new branch as *feature/extra_homework*, don't forget to push it before the time that it was given.
 
 1. **[+5%/5.0]**: Modify the docker file to source ROS2 and have autocompleted commands like ```ROS2 topic list```.
-2. **[+5%/5.0]**: Make that the Kiwibot image doesn't get distorted when is turning.
-3. **[+15%/5.0]**: In the GUI, there's an empty field with the `Porc:???%` value. Find a way to print there the % of the total distance of the routine that the robot has traveled.
+2. **[+5%/5.0]**: Have the data downloaded from the gsheet and saved in a .csv file each time the container is opened.
+3. **[+5%/5.0]**: Make that the Kiwibot image doesn't get distorted when is turning.
+4. **[+10%/5.0]**: In the GUI, there's an empty field with the `Porc:???%` value. Find a way to print there the % of the total distance of the routine that the robot has traveled.
 <img height="300" src="https://user-images.githubusercontent.com/38380745/143324697-a06fb3ae-de62-4d42-8373-0da62e68a314.png">
 
-4. **[+20%/5.0]**: Kiwibot's Operations Team asked us to start measuring information about our robot deliveries. They need a record of the deliveries (routines) that our robot have made. Find a way to have a `.csv` file where you will record the information of the executed routines made by the robot, including: date, time, routine id, total distance, total time. This information must be persistent i.e. it shouldn't be erased if you close the window, You decide where this file will be saved, but be sure you don't break anything.
-5. **[+10%/5.0]**: Print in the GUI a new line with the total distance traveled by the robot (using the information saved in the point 4). Similar to a tachometer in a car :).
-6. **[+10%/5.0]**: Find a way to reset the tachometer from the point 5 using a key.
-7. **[+15%/5.0]:** Implement a method or way to stop the routine (with a key).
-8. **[+15%/5.0]**: Now, we need to be sure that the unfinished routines data are also recorded in our `.csv` file. Here you could add a new "completed" column, and define it as `1 -> completed routines` or `0 -> uncompleted routines`. 
-9. **[+10%/5.0]:** Make that Kiwibot track2.wav don't get distorted. Use: `ros2 topic pub -1 /device/speaker/command std_msgs/Int8 "data: 2"`
+5. **[+10%/5.0]**: Implement a method or way to stop the routine (with a key).
+
+6. **[+20%/5.0]**: Update the data from the test track to a gsheet every time the routine es paused or the robot reach a waypoint with the percent data form the point 4.
+
+7. **[+10%/5.0]:** Here you could add a new "completed" column, and define it as 1 -> completed routines or 0 -> uncompleted routines.
+
+8. **[+10%/5.0]**: Filter the information in the google sheet table by routine and generate a chart with the total distance traveled.
+
+9. **[+15%/5.0]**: Add the previous chart the option to show the completed and uncompleted routines.
+
+10. **[+10%/5.0]:** Make that Kiwibot track2.wav don't get distorted. Use: `ros2 topic pub -1 /device/speaker/command std_msgs/Int8 "data: 0"`
 
 
-Total possible Extra points: 105% -> 5.0. Maximum total grade: 10.25/5.0. Complete the point it doesn't mean you have 5.0, you have at least 3.0 but for the rest of the grade will evaluate the performance and the beauty of your solution. To complete these points, probably you will have to modify messages, services, or even create new ones, also topics subscribers and publishers, maybe services, who knows :)
+Total possible Extra points: 100% -> 5.0. Maximum total grade: 10.0/5.0. Complete the point it doesn't mean you have 5.0, you have at least 3.0 but for the rest of the grade will evaluate the performance and the beauty of your solution. To complete these points, probably you will have to modify messages, services, or even create new ones, also topics subscribers and publishers, maybe services, who knows :)
 
 ---
 Good luck, and God saves the Queen.
