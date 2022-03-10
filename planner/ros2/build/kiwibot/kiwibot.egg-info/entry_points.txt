@@ -1,0 +1,3 @@
+[console_scripts]
+kiwibot = kiwibot.node_kiwibot:main
+

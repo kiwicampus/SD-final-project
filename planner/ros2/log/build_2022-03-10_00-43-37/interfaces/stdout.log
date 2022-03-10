@@ -1,0 +1,76 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)
+-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found utils: 0.0.1 (/workspace/planner/ros2/install/utils/share/utils/cmake)
+-- Found ALSA: /usr/lib/x86_64-linux-gnu/libasound.so (found version "1.2.2") 
+-- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /workspace/planner/ros2/src/interfaces/include;$<BUILD_INTERFACE:/workspace/planner/ros2/src/interfaces/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/planner/ros2/build/interfaces
+[35m[1mScanning dependencies of target interfaces_node[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/interfaces_node.dir/src/modules/speaker.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/interfaces_node.dir/src/interfaces_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable interfaces_node[0m
+[100%] Built target interfaces_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /workspace/planner/ros2/install/interfaces/lib/interfaces/interfaces_node
+-- Symlinking: /workspace/planner/ros2/install/interfaces/include/modules//speaker.hpp
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/environment/ament_prefix_path.sh
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/environment/path.sh
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/environment/path.dsv
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/local_setup.bash
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/local_setup.sh
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/local_setup.zsh
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/local_setup.dsv
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/package.dsv
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/ament_index/resource_index/packages/interfaces
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake
+-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/package.xml

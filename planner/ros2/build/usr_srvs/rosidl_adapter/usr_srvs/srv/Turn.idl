@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from usr_srvs/srv/robot/Turn.srv
+// generated code does not contain a copyright notice
+
+#include "usr_msgs/msg/TurnRef.idl"
+
+module usr_srvs {
+  module srv {
+    struct Turn_Request {
+      sequence<usr_msgs::msg::TurnRef> turn_ref;
+    };
+    struct Turn_Response {
+      boolean completed;
+    };
+  };
+};

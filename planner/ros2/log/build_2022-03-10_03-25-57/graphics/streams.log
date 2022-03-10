@@ -1,0 +1,17 @@
+[1.516s] Invoking command in '/workspace/planner/ros2/build/graphics': PYTHONPATH=/workspace/planner/ros2/install/graphics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /workspace/planner/ros2/install/graphics --editable --build-directory /workspace/planner/ros2/build/graphics/build --no-deps install_data --install-dir /workspace/planner/ros2/install/graphics
+[1.867s] running develop
+[1.985s] running egg_info
+[1.987s] writing graphics.egg-info/PKG-INFO
+[1.987s] writing dependency_links to graphics.egg-info/dependency_links.txt
+[1.987s] writing entry points to graphics.egg-info/entry_points.txt
+[1.988s] writing requirements to graphics.egg-info/requires.txt
+[1.988s] writing top-level names to graphics.egg-info/top_level.txt
+[2.036s] reading manifest file 'graphics.egg-info/SOURCES.txt'
+[2.036s] writing manifest file 'graphics.egg-info/SOURCES.txt'
+[2.041s] running build_ext
+[2.041s] Creating /workspace/planner/ros2/install/graphics/lib/python3.8/site-packages/graphics.egg-link (link to .)
+[2.041s] Installing graphics script to /workspace/planner/ros2/install/graphics/lib/graphics
+[2.043s] 
+[2.043s] Installed /workspace/planner/ros2/build/graphics
+[2.043s] running install_data
+[2.146s] Invoked command in '/workspace/planner/ros2/build/graphics' returned '0': PYTHONPATH=/workspace/planner/ros2/install/graphics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /workspace/planner/ros2/install/graphics --editable --build-directory /workspace/planner/ros2/build/graphics/build --no-deps install_data --install-dir /workspace/planner/ros2/install/graphics

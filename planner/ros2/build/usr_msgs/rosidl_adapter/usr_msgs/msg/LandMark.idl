@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from usr_msgs/msg/path_planner/LandMark.msg
+// generated code does not contain a copyright notice
+
+
+module usr_msgs {
+  module msg {
+    struct LandMark {
+      @verbatim (language="comment", text=
+        " id of closer neighbors")
+      sequence<int8> neighbors;
+
+      @verbatim (language="comment", text=
+        " id unic landmark identifier")
+      int8 id;
+
+      @verbatim (language="comment", text=
+        " x axis position")
+      int32 x;
+
+      @verbatim (language="comment", text=
+        " y axis position")
+      int32 y;
+    };
+  };
+};

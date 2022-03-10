@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from usr_srvs/srv/robot/Move.srv
+// generated code does not contain a copyright notice
+
+#include "usr_msgs/msg/Waypoint.idl"
+
+module usr_srvs {
+  module srv {
+    struct Move_Request {
+      sequence<usr_msgs::msg::Waypoint> waypoints;
+    };
+    struct Move_Response {
+      boolean completed;
+    };
+  };
+};

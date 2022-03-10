@@ -1,0 +1,1 @@
+/workspace/planner/ros2/build/usr_msgs/rosidl_typesupport_introspection_c/usr_msgs/msg/detail/planner__rosidl_typesupport_introspection_c.h

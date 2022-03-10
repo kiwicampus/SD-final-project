@@ -1,0 +1,17 @@
+[1.150s] Invoking command in '/workspace/planner/ros2/build/path_planner': PYTHONPATH=/workspace/planner/ros2/install/path_planner/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /workspace/planner/ros2/install/path_planner --editable --build-directory /workspace/planner/ros2/build/path_planner/build --no-deps install_data --install-dir /workspace/planner/ros2/install/path_planner
+[1.397s] running develop
+[1.494s] running egg_info
+[1.496s] writing path_planner.egg-info/PKG-INFO
+[1.496s] writing dependency_links to path_planner.egg-info/dependency_links.txt
+[1.496s] writing entry points to path_planner.egg-info/entry_points.txt
+[1.497s] writing requirements to path_planner.egg-info/requires.txt
+[1.497s] writing top-level names to path_planner.egg-info/top_level.txt
+[1.529s] reading manifest file 'path_planner.egg-info/SOURCES.txt'
+[1.531s] writing manifest file 'path_planner.egg-info/SOURCES.txt'
+[1.532s] running build_ext
+[1.532s] Creating /workspace/planner/ros2/install/path_planner/lib/python3.8/site-packages/path-planner.egg-link (link to .)
+[1.534s] Installing path_planner script to /workspace/planner/ros2/install/path_planner/lib/path_planner
+[1.535s] 
+[1.535s] Installed /workspace/planner/ros2/build/path_planner
+[1.535s] running install_data
+[1.595s] Invoked command in '/workspace/planner/ros2/build/path_planner' returned '0': PYTHONPATH=/workspace/planner/ros2/install/path_planner/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /workspace/planner/ros2/install/path_planner --editable --build-directory /workspace/planner/ros2/build/path_planner/build --no-deps install_data --install-dir /workspace/planner/ros2/install/path_planner

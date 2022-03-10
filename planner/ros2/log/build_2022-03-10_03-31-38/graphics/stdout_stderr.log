@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing graphics.egg-info/PKG-INFO
+writing dependency_links to graphics.egg-info/dependency_links.txt
+writing entry points to graphics.egg-info/entry_points.txt
+writing requirements to graphics.egg-info/requires.txt
+writing top-level names to graphics.egg-info/top_level.txt
+reading manifest file 'graphics.egg-info/SOURCES.txt'
+writing manifest file 'graphics.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspace/planner/ros2/install/graphics/lib/python3.8/site-packages/graphics.egg-link (link to .)
+Installing graphics script to /workspace/planner/ros2/install/graphics/lib/graphics
+
+Installed /workspace/planner/ros2/build/graphics
+running install_data

@@ -1,0 +1,924 @@
+[0.000000] (-) TimerEvent: {}
+[0.000477] (graphics) JobQueued: {'identifier': 'graphics', 'dependencies': OrderedDict()}
+[0.001132] (kiwibot) JobQueued: {'identifier': 'kiwibot', 'dependencies': OrderedDict()}
+[0.001178] (path_planner) JobQueued: {'identifier': 'path_planner', 'dependencies': OrderedDict()}
+[0.001199] (usr_msgs) JobQueued: {'identifier': 'usr_msgs', 'dependencies': OrderedDict()}
+[0.001223] (utils) JobQueued: {'identifier': 'utils', 'dependencies': OrderedDict()}
+[0.001247] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict([('utils', '/workspace/planner/ros2/install/utils')])}
+[0.001265] (usr_srvs) JobQueued: {'identifier': 'usr_srvs', 'dependencies': OrderedDict([('usr_msgs', '/workspace/planner/ros2/install/usr_msgs')])}
+[0.001281] (usr_msgs) JobStarted: {'identifier': 'usr_msgs'}
+[0.018406] (utils) JobStarted: {'identifier': 'utils'}
+[0.025315] (graphics) JobStarted: {'identifier': 'graphics'}
+[0.036794] (kiwibot) JobStarted: {'identifier': 'kiwibot'}
+[0.049871] (path_planner) JobStarted: {'identifier': 'path_planner'}
+[0.064358] (usr_msgs) JobProgress: {'identifier': 'usr_msgs', 'progress': 'cmake'}
+[0.064825] (usr_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '/workspace/planner/ros2/src/usr_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspace/planner/ros2/install/usr_msgs'], 'cwd': '/workspace/planner/ros2/build/usr_msgs', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_SOURCE_DIR', '/cmake_build'), ('TURN_TIME', '2.0'), ('HOSTNAME', 'servicedesk1'), ('GIT_ASKPASS', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}][{time}][{name}]: {message}'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('BROWSER', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh'), ('HOME', '/home/ada'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.64.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock'), ('ROS_PYTHON_VERSION', '3'), ('TURN_PRINT_WAYPOINT', '0'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'galactic'), ('BOT_INITIAL_YAW', '90'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('FORWARE_CRTL_POINTS', '100'), ('TERM', 'xterm-256color'), ('BOT_INITIAL_X', '917'), ('FORWARE_ACELERATION_FC', '0.3'), ('ROS_LOCALHOST_ONLY', '0'), ('BOT_INITIAL_Y', '1047'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-49be5c6b2d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('OPENCV_VERSION', '4.4.0'), ('OPENCV_CONTRIB_VERSION', '4.4.0'), ('FORWARE_PRINT_WAYPOINT', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UDEV', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '1'), ('PWD', '/workspace/planner/ros2/build/usr_msgs'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('DELETE_BUILD', '0'), ('TURN_CRTL_POINTS', '50'), ('COLCON', '1'), ('TURN_ACELERATION_FC', '0.5'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.075673] (utils) JobProgress: {'identifier': 'utils', 'progress': 'cmake'}
+[0.076547] (utils) Command: {'cmd': ['/usr/local/bin/cmake', '/workspace/planner/ros2/src/utils', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspace/planner/ros2/install/utils'], 'cwd': '/workspace/planner/ros2/build/utils', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_SOURCE_DIR', '/cmake_build'), ('TURN_TIME', '2.0'), ('HOSTNAME', 'servicedesk1'), ('GIT_ASKPASS', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}][{time}][{name}]: {message}'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('BROWSER', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh'), ('HOME', '/home/ada'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.64.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock'), ('ROS_PYTHON_VERSION', '3'), ('TURN_PRINT_WAYPOINT', '0'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'galactic'), ('BOT_INITIAL_YAW', '90'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('FORWARE_CRTL_POINTS', '100'), ('TERM', 'xterm-256color'), ('BOT_INITIAL_X', '917'), ('FORWARE_ACELERATION_FC', '0.3'), ('ROS_LOCALHOST_ONLY', '0'), ('BOT_INITIAL_Y', '1047'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-49be5c6b2d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('OPENCV_VERSION', '4.4.0'), ('OPENCV_CONTRIB_VERSION', '4.4.0'), ('FORWARE_PRINT_WAYPOINT', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UDEV', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '1'), ('PWD', '/workspace/planner/ros2/build/utils'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('DELETE_BUILD', '0'), ('TURN_CRTL_POINTS', '50'), ('COLCON', '1'), ('TURN_ACELERATION_FC', '0.5'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.099557] (-) TimerEvent: {}
+[0.199945] (-) TimerEvent: {}
+[0.300538] (-) TimerEvent: {}
+[0.400980] (-) TimerEvent: {}
+[0.501403] (-) TimerEvent: {}
+[0.601867] (-) TimerEvent: {}
+[0.702345] (-) TimerEvent: {}
+[0.799667] (usr_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.800231] (usr_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.800295] (usr_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.800495] (usr_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.800799] (usr_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.800985] (usr_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.801176] (usr_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.801365] (usr_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.801927] (usr_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.802126] (usr_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.803177] (-) TimerEvent: {}
+[0.803539] (usr_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.803880] (usr_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.803958] (utils) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.804138] (utils) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.805858] (utils) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.806156] (utils) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.806211] (utils) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.806259] (utils) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.806734] (utils) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.807027] (utils) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.807178] (utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.807241] (utils) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.808685] (utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.808898] (utils) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.833405] (usr_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.835374] (usr_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.837247] (utils) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.840415] (utils) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.840687] (usr_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.845018] (utils) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.869896] (usr_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.870137] (usr_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.877157] (utils) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.877705] (utils) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.903309] (-) TimerEvent: {}
+[0.965660] (usr_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.965835] (utils) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.003509] (-) TimerEvent: {}
+[1.019983] (utils) StdoutLine: {'line': b'-- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[1.022169] (usr_msgs) StdoutLine: {'line': b'-- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[1.103578] (-) TimerEvent: {}
+[1.158323] (utils) StdoutLine: {'line': b'-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c\n'}
+[1.180251] (utils) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[1.203678] (-) TimerEvent: {}
+[1.205400] (usr_msgs) StdoutLine: {'line': b'-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c\n'}
+[1.235126] (usr_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[1.249571] (graphics) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/workspace/planner/ros2/install/graphics', '--editable', '--build-directory', '/workspace/planner/ros2/build/graphics/build', '--no-deps', 'install_data', '--install-dir', '/workspace/planner/ros2/install/graphics'], 'cwd': '/workspace/planner/ros2/build/graphics', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'CMAKE_SOURCE_DIR': '/cmake_build', 'TURN_TIME': '2.0', 'HOSTNAME': 'servicedesk1', 'GIT_ASKPASS': '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '[{severity}][{time}][{name}]: {message}', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'BROWSER': '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh', 'HOME': '/home/ada', 'OLDPWD': '/workspace', 'TERM_PROGRAM_VERSION': '1.64.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock', 'ROS_PYTHON_VERSION': '3', 'TURN_PRINT_WAYPOINT': '0', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'galactic', 'BOT_INITIAL_YAW': '90', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'FORWARE_CRTL_POINTS': '100', 'TERM': 'xterm-256color', 'BOT_INITIAL_X': '917', 'FORWARE_ACELERATION_FC': '0.3', 'ROS_LOCALHOST_ONLY': '0', 'BOT_INITIAL_Y': '1047', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-49be5c6b2d.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'OPENCV_VERSION': '4.4.0', 'OPENCV_CONTRIB_VERSION': '4.4.0', 'FORWARE_PRINT_WAYPOINT': '0', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'UDEV': '1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'RCUTILS_LOGGING_USE_STDOUT': '1', 'PWD': '/workspace/planner/ros2/build/graphics', 'LC_ALL': 'C.UTF-8', 'RCUTILS_COLORIZED_OUTPUT': '1', 'PYTHONPATH': '/workspace/planner/ros2/install/graphics/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'DELETE_BUILD': '0', 'TURN_CRTL_POINTS': '50', 'COLCON': '1', 'TURN_ACELERATION_FC': '0.5'}, 'shell': False}
+[1.257139] (kiwibot) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/workspace/planner/ros2/install/kiwibot', '--editable', '--build-directory', '/workspace/planner/ros2/build/kiwibot/build', '--no-deps', 'install_data', '--install-dir', '/workspace/planner/ros2/install/kiwibot'], 'cwd': '/workspace/planner/ros2/build/kiwibot', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'CMAKE_SOURCE_DIR': '/cmake_build', 'TURN_TIME': '2.0', 'HOSTNAME': 'servicedesk1', 'GIT_ASKPASS': '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '[{severity}][{time}][{name}]: {message}', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'BROWSER': '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh', 'HOME': '/home/ada', 'OLDPWD': '/workspace', 'TERM_PROGRAM_VERSION': '1.64.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock', 'ROS_PYTHON_VERSION': '3', 'TURN_PRINT_WAYPOINT': '0', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'galactic', 'BOT_INITIAL_YAW': '90', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'FORWARE_CRTL_POINTS': '100', 'TERM': 'xterm-256color', 'BOT_INITIAL_X': '917', 'FORWARE_ACELERATION_FC': '0.3', 'ROS_LOCALHOST_ONLY': '0', 'BOT_INITIAL_Y': '1047', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-49be5c6b2d.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'OPENCV_VERSION': '4.4.0', 'OPENCV_CONTRIB_VERSION': '4.4.0', 'FORWARE_PRINT_WAYPOINT': '0', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'UDEV': '1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'RCUTILS_LOGGING_USE_STDOUT': '1', 'PWD': '/workspace/planner/ros2/build/kiwibot', 'LC_ALL': 'C.UTF-8', 'RCUTILS_COLORIZED_OUTPUT': '1', 'PYTHONPATH': '/workspace/planner/ros2/install/kiwibot/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'DELETE_BUILD': '0', 'TURN_CRTL_POINTS': '50', 'COLCON': '1', 'TURN_ACELERATION_FC': '0.5'}, 'shell': False}
+[1.271689] (utils) StdoutLine: {'line': b'-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp\n'}
+[1.303791] (-) TimerEvent: {}
+[1.325834] (usr_msgs) StdoutLine: {'line': b'-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp\n'}
+[1.326308] (path_planner) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/workspace/planner/ros2/install/path_planner', '--editable', '--build-directory', '/workspace/planner/ros2/build/path_planner/build', '--no-deps', 'install_data', '--install-dir', '/workspace/planner/ros2/install/path_planner'], 'cwd': '/workspace/planner/ros2/build/path_planner', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'CMAKE_SOURCE_DIR': '/cmake_build', 'TURN_TIME': '2.0', 'HOSTNAME': 'servicedesk1', 'GIT_ASKPASS': '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '[{severity}][{time}][{name}]: {message}', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'BROWSER': '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh', 'HOME': '/home/ada', 'OLDPWD': '/workspace', 'TERM_PROGRAM_VERSION': '1.64.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock', 'ROS_PYTHON_VERSION': '3', 'TURN_PRINT_WAYPOINT': '0', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'galactic', 'BOT_INITIAL_YAW': '90', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'FORWARE_CRTL_POINTS': '100', 'TERM': 'xterm-256color', 'BOT_INITIAL_X': '917', 'FORWARE_ACELERATION_FC': '0.3', 'ROS_LOCALHOST_ONLY': '0', 'BOT_INITIAL_Y': '1047', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-49be5c6b2d.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'OPENCV_VERSION': '4.4.0', 'OPENCV_CONTRIB_VERSION': '4.4.0', 'FORWARE_PRINT_WAYPOINT': '0', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'UDEV': '1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'RCUTILS_LOGGING_USE_STDOUT': '1', 'PWD': '/workspace/planner/ros2/build/path_planner', 'LC_ALL': 'C.UTF-8', 'RCUTILS_COLORIZED_OUTPUT': '1', 'PYTHONPATH': '/workspace/planner/ros2/install/path_planner/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'DELETE_BUILD': '0', 'TURN_CRTL_POINTS': '50', 'COLCON': '1', 'TURN_ACELERATION_FC': '0.5'}, 'shell': False}
+[1.403907] (-) TimerEvent: {}
+[1.480787] (graphics) StdoutLine: {'line': b'running develop\n'}
+[1.488831] (kiwibot) StdoutLine: {'line': b'running develop\n'}
+[1.503994] (-) TimerEvent: {}
+[1.533401] (utils) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[1.541052] (utils) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.550335] (path_planner) StdoutLine: {'line': b'running develop\n'}
+[1.577402] (graphics) StdoutLine: {'line': b'running egg_info\n'}
+[1.577937] (graphics) StdoutLine: {'line': b'creating graphics.egg-info\n'}
+[1.581242] (usr_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[1.582041] (graphics) StdoutLine: {'line': b'writing graphics.egg-info/PKG-INFO\n'}
+[1.582314] (graphics) StdoutLine: {'line': b'writing dependency_links to graphics.egg-info/dependency_links.txt\n'}
+[1.582431] (graphics) StdoutLine: {'line': b'writing entry points to graphics.egg-info/entry_points.txt\n'}
+[1.582713] (graphics) StdoutLine: {'line': b'writing requirements to graphics.egg-info/requires.txt\n'}
+[1.582807] (graphics) StdoutLine: {'line': b'writing top-level names to graphics.egg-info/top_level.txt\n'}
+[1.583020] (graphics) StdoutLine: {'line': b"writing manifest file 'graphics.egg-info/SOURCES.txt'\n"}
+[1.586486] (kiwibot) StdoutLine: {'line': b'running egg_info\n'}
+[1.586975] (kiwibot) StdoutLine: {'line': b'creating kiwibot.egg-info\n'}
+[1.588250] (kiwibot) StdoutLine: {'line': b'writing kiwibot.egg-info/PKG-INFO\n'}
+[1.588972] (kiwibot) StdoutLine: {'line': b'writing dependency_links to kiwibot.egg-info/dependency_links.txt\n'}
+[1.589308] (kiwibot) StdoutLine: {'line': b'writing entry points to kiwibot.egg-info/entry_points.txt\n'}
+[1.589610] (kiwibot) StdoutLine: {'line': b'writing requirements to kiwibot.egg-info/requires.txt\n'}
+[1.589814] (kiwibot) StdoutLine: {'line': b'writing top-level names to kiwibot.egg-info/top_level.txt\n'}
+[1.590004] (kiwibot) StdoutLine: {'line': b"writing manifest file 'kiwibot.egg-info/SOURCES.txt'\n"}
+[1.591201] (usr_msgs) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.604095] (-) TimerEvent: {}
+[1.617447] (graphics) StdoutLine: {'line': b"reading manifest file 'graphics.egg-info/SOURCES.txt'\n"}
+[1.618119] (graphics) StdoutLine: {'line': b"writing manifest file 'graphics.egg-info/SOURCES.txt'\n"}
+[1.619934] (graphics) StdoutLine: {'line': b'running build_ext\n'}
+[1.620281] (graphics) StdoutLine: {'line': b'Creating /workspace/planner/ros2/install/graphics/lib/python3.8/site-packages/site.py\n'}
+[1.622774] (graphics) StdoutLine: {'line': b'Creating /workspace/planner/ros2/install/graphics/lib/python3.8/site-packages/graphics.egg-link (link to .)\n'}
+[1.624394] (graphics) StdoutLine: {'line': b'Installing graphics script to /workspace/planner/ros2/install/graphics/lib/graphics\n'}
+[1.624637] (graphics) StdoutLine: {'line': b'\n'}
+[1.624990] (graphics) StdoutLine: {'line': b'Installed /workspace/planner/ros2/build/graphics\n'}
+[1.625142] (graphics) StdoutLine: {'line': b'running install_data\n'}
+[1.625324] (graphics) StdoutLine: {'line': b'creating /workspace/planner/ros2/install/graphics/share/ament_index\n'}
+[1.625428] (graphics) StdoutLine: {'line': b'creating /workspace/planner/ros2/install/graphics/share/ament_index/resource_index\n'}
+[1.625597] (graphics) StdoutLine: {'line': b'creating /workspace/planner/ros2/install/graphics/share/ament_index/resource_index/packages\n'}
+[1.625682] (graphics) StdoutLine: {'line': b'copying resource/graphics -> /workspace/planner/ros2/install/graphics/share/ament_index/resource_index/packages\n'}
+[1.625762] (graphics) StdoutLine: {'line': b'copying package.xml -> /workspace/planner/ros2/install/graphics/share/graphics\n'}
+[1.625852] (kiwibot) StdoutLine: {'line': b"reading manifest file 'kiwibot.egg-info/SOURCES.txt'\n"}
+[1.626026] (kiwibot) StdoutLine: {'line': b"writing manifest file 'kiwibot.egg-info/SOURCES.txt'\n"}
+[1.627699] (kiwibot) StdoutLine: {'line': b'running build_ext\n'}
+[1.627894] (kiwibot) StdoutLine: {'line': b'Creating /workspace/planner/ros2/install/kiwibot/lib/python3.8/site-packages/site.py\n'}
+[1.629571] (kiwibot) StdoutLine: {'line': b'Creating /workspace/planner/ros2/install/kiwibot/lib/python3.8/site-packages/kiwibot.egg-link (link to .)\n'}
+[1.630283] (kiwibot) StdoutLine: {'line': b'Installing kiwibot script to /workspace/planner/ros2/install/kiwibot/lib/kiwibot\n'}
+[1.630475] (kiwibot) StdoutLine: {'line': b'\n'}
+[1.631438] (kiwibot) StdoutLine: {'line': b'Installed /workspace/planner/ros2/build/kiwibot\n'}
+[1.631581] (kiwibot) StdoutLine: {'line': b'running install_data\n'}
+[1.631679] (kiwibot) StdoutLine: {'line': b'creating /workspace/planner/ros2/install/kiwibot/share/ament_index\n'}
+[1.631765] (kiwibot) StdoutLine: {'line': b'creating /workspace/planner/ros2/install/kiwibot/share/ament_index/resource_index\n'}
+[1.631833] (kiwibot) StdoutLine: {'line': b'creating /workspace/planner/ros2/install/kiwibot/share/ament_index/resource_index/packages\n'}
+[1.631898] (kiwibot) StdoutLine: {'line': b'copying resource/kiwibot -> /workspace/planner/ros2/install/kiwibot/share/ament_index/resource_index/packages\n'}
+[1.631963] (kiwibot) StdoutLine: {'line': b'copying package.xml -> /workspace/planner/ros2/install/kiwibot/share/kiwibot\n'}
+[1.646122] (path_planner) StdoutLine: {'line': b'running egg_info\n'}
+[1.646348] (path_planner) StdoutLine: {'line': b'creating path_planner.egg-info\n'}
+[1.648513] (path_planner) StdoutLine: {'line': b'writing path_planner.egg-info/PKG-INFO\n'}
+[1.649497] (path_planner) StdoutLine: {'line': b'writing dependency_links to path_planner.egg-info/dependency_links.txt\n'}
+[1.649958] (path_planner) StdoutLine: {'line': b'writing entry points to path_planner.egg-info/entry_points.txt\n'}
+[1.650295] (path_planner) StdoutLine: {'line': b'writing requirements to path_planner.egg-info/requires.txt\n'}
+[1.650398] (path_planner) StdoutLine: {'line': b'writing top-level names to path_planner.egg-info/top_level.txt\n'}
+[1.650861] (path_planner) StdoutLine: {'line': b"writing manifest file 'path_planner.egg-info/SOURCES.txt'\n"}
+[1.652717] (utils) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.659287] (utils) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.669718] (graphics) CommandEnded: {'returncode': 0}
+[1.687746] (path_planner) StdoutLine: {'line': b"reading manifest file 'path_planner.egg-info/SOURCES.txt'\n"}
+[1.688616] (path_planner) StdoutLine: {'line': b"writing manifest file 'path_planner.egg-info/SOURCES.txt'\n"}
+[1.689654] (path_planner) StdoutLine: {'line': b'running build_ext\n'}
+[1.689759] (path_planner) StdoutLine: {'line': b'Creating /workspace/planner/ros2/install/path_planner/lib/python3.8/site-packages/site.py\n'}
+[1.692895] (path_planner) StdoutLine: {'line': b'Creating /workspace/planner/ros2/install/path_planner/lib/python3.8/site-packages/path-planner.egg-link (link to .)\n'}
+[1.693767] (path_planner) StdoutLine: {'line': b'Installing path_planner script to /workspace/planner/ros2/install/path_planner/lib/path_planner\n'}
+[1.694189] (graphics) JobEnded: {'identifier': 'graphics', 'rc': 0}
+[1.698439] (path_planner) StdoutLine: {'line': b'\n'}
+[1.699387] (path_planner) StdoutLine: {'line': b'Installed /workspace/planner/ros2/build/path_planner\n'}
+[1.700500] (path_planner) StdoutLine: {'line': b'running install_data\n'}
+[1.701825] (path_planner) StdoutLine: {'line': b'creating /workspace/planner/ros2/install/path_planner/share/ament_index\n'}
+[1.701973] (path_planner) StdoutLine: {'line': b'creating /workspace/planner/ros2/install/path_planner/share/ament_index/resource_index\n'}
+[1.702099] (path_planner) StdoutLine: {'line': b'creating /workspace/planner/ros2/install/path_planner/share/ament_index/resource_index/packages\n'}
+[1.702323] (path_planner) StdoutLine: {'line': b'copying resource/path_planner -> /workspace/planner/ros2/install/path_planner/share/ament_index/resource_index/packages\n'}
+[1.703315] (path_planner) StdoutLine: {'line': b'copying package.xml -> /workspace/planner/ros2/install/path_planner/share/path_planner\n'}
+[1.704049] (kiwibot) CommandEnded: {'returncode': 0}
+[1.706268] (-) TimerEvent: {}
+[1.707300] (usr_msgs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.707586] (usr_msgs) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.716896] (kiwibot) JobEnded: {'identifier': 'kiwibot', 'rc': 0}
+[1.769761] (utils) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.772082] (path_planner) CommandEnded: {'returncode': 0}
+[1.772986] (utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.782118] (path_planner) JobEnded: {'identifier': 'path_planner', 'rc': 0}
+[1.797740] (usr_msgs) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.798256] (usr_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.806378] (-) TimerEvent: {}
+[1.848660] (utils) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.849237] (utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.876253] (usr_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.876768] (usr_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.906694] (-) TimerEvent: {}
+[1.911137] (utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.911491] (utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.941957] (usr_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.942938] (usr_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.979467] (utils) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.983678] (utils) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.006811] (-) TimerEvent: {}
+[2.007538] (usr_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.011204] (usr_msgs) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.106919] (-) TimerEvent: {}
+[2.207221] (-) TimerEvent: {}
+[2.307535] (-) TimerEvent: {}
+[2.407839] (-) TimerEvent: {}
+[2.469417] (usr_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)\n'}
+[2.504135] (usr_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[2.507962] (-) TimerEvent: {}
+[2.544279] (utils) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.590000] (utils) StdoutLine: {'line': b'-- Generating done\n'}
+[2.592635] (utils) StdoutLine: {'line': b'-- Build files have been written to: /workspace/planner/ros2/build/utils\n'}
+[2.598046] (utils) CommandEnded: {'returncode': 0}
+[2.599007] (utils) JobProgress: {'identifier': 'utils', 'progress': 'build'}
+[2.600818] (utils) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/workspace/planner/ros2/build/utils', '--', '-j12', '-l12'], 'cwd': '/workspace/planner/ros2/build/utils', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_SOURCE_DIR', '/cmake_build'), ('TURN_TIME', '2.0'), ('HOSTNAME', 'servicedesk1'), ('GIT_ASKPASS', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}][{time}][{name}]: {message}'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('BROWSER', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh'), ('HOME', '/home/ada'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.64.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock'), ('ROS_PYTHON_VERSION', '3'), ('TURN_PRINT_WAYPOINT', '0'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'galactic'), ('BOT_INITIAL_YAW', '90'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('FORWARE_CRTL_POINTS', '100'), ('TERM', 'xterm-256color'), ('BOT_INITIAL_X', '917'), ('FORWARE_ACELERATION_FC', '0.3'), ('ROS_LOCALHOST_ONLY', '0'), ('BOT_INITIAL_Y', '1047'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-49be5c6b2d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('OPENCV_VERSION', '4.4.0'), ('OPENCV_CONTRIB_VERSION', '4.4.0'), ('FORWARE_PRINT_WAYPOINT', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UDEV', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '1'), ('PWD', '/workspace/planner/ros2/build/utils'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('DELETE_BUILD', '0'), ('TURN_CRTL_POINTS', '50'), ('COLCON', '1'), ('TURN_ACELERATION_FC', '0.5'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[2.608133] (-) TimerEvent: {}
+[2.626300] (usr_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[2.630464] (utils) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target utils\x1b[0m\n'}
+[2.639000] (utils) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/utils.dir/lib/console.cpp.o\x1b[0m\n'}
+[2.708239] (-) TimerEvent: {}
+[2.808533] (-) TimerEvent: {}
+[2.908872] (-) TimerEvent: {}
+[3.009408] (-) TimerEvent: {}
+[3.023181] (utils) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libutils.a\x1b[0m\n'}
+[3.040500] (utils) StdoutLine: {'line': b'[100%] Built target utils\n'}
+[3.045953] (utils) CommandEnded: {'returncode': 0}
+[3.057323] (usr_msgs) StdoutLine: {'line': b'-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c\n'}
+[3.061700] (utils) JobProgress: {'identifier': 'utils', 'progress': 'install'}
+[3.067465] (utils) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/workspace/planner/ros2/build/utils'], 'cwd': '/workspace/planner/ros2/build/utils', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_SOURCE_DIR', '/cmake_build'), ('TURN_TIME', '2.0'), ('HOSTNAME', 'servicedesk1'), ('GIT_ASKPASS', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}][{time}][{name}]: {message}'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('BROWSER', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh'), ('HOME', '/home/ada'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.64.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock'), ('ROS_PYTHON_VERSION', '3'), ('TURN_PRINT_WAYPOINT', '0'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'galactic'), ('BOT_INITIAL_YAW', '90'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('FORWARE_CRTL_POINTS', '100'), ('TERM', 'xterm-256color'), ('BOT_INITIAL_X', '917'), ('FORWARE_ACELERATION_FC', '0.3'), ('ROS_LOCALHOST_ONLY', '0'), ('BOT_INITIAL_Y', '1047'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-49be5c6b2d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('OPENCV_VERSION', '4.4.0'), ('OPENCV_CONTRIB_VERSION', '4.4.0'), ('FORWARE_PRINT_WAYPOINT', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UDEV', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '1'), ('PWD', '/workspace/planner/ros2/build/utils'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('DELETE_BUILD', '0'), ('TURN_CRTL_POINTS', '50'), ('COLCON', '1'), ('TURN_ACELERATION_FC', '0.5'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[3.073617] (utils) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.075410] (utils) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.076525] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/environment/library_path.sh\n'}
+[3.080629] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/environment/library_path.dsv\n'}
+[3.085150] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/include/utils//console.hpp\n'}
+[3.089120] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/ament_index/resource_index/package_run_dependencies/utils\n'}
+[3.092955] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/ament_index/resource_index/parent_prefix_path/utils\n'}
+[3.097513] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/environment/ament_prefix_path.sh\n'}
+[3.101119] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/environment/ament_prefix_path.dsv\n'}
+[3.105039] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/environment/path.sh\n'}
+[3.109187] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/environment/path.dsv\n'}
+[3.109471] (-) TimerEvent: {}
+[3.113828] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/local_setup.bash\n'}
+[3.118615] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/local_setup.sh\n'}
+[3.123900] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/local_setup.zsh\n'}
+[3.129407] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/local_setup.dsv\n'}
+[3.133800] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/package.dsv\n'}
+[3.138326] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/ament_index/resource_index/packages/utils\n'}
+[3.141859] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.146111] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.149537] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/cmake/utilsConfig.cmake\n'}
+[3.153477] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/cmake/utilsConfig-version.cmake\n'}
+[3.157641] (utils) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/utils/share/utils/package.xml\n'}
+[3.161430] (utils) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/utils/lib/libutils.a\n'}
+[3.161715] (utils) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/utils/share/utils/cmake/export_utilsExport.cmake\n'}
+[3.162057] (utils) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/utils/share/utils/cmake/export_utilsExport-noconfig.cmake\n'}
+[3.164207] (utils) CommandEnded: {'returncode': 0}
+[3.196215] (utils) JobEnded: {'identifier': 'utils', 'rc': 0}
+[3.198008] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[3.205819] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[3.207849] (interfaces) Command: {'cmd': ['/usr/local/bin/cmake', '/workspace/planner/ros2/src/interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspace/planner/ros2/install/interfaces'], 'cwd': '/workspace/planner/ros2/build/interfaces', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_SOURCE_DIR', '/cmake_build'), ('TURN_TIME', '2.0'), ('HOSTNAME', 'servicedesk1'), ('GIT_ASKPASS', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}][{time}][{name}]: {message}'), ('LD_LIBRARY_PATH', '/workspace/planner/ros2/install/utils/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('BROWSER', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh'), ('HOME', '/home/ada'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.64.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock'), ('ROS_PYTHON_VERSION', '3'), ('TURN_PRINT_WAYPOINT', '0'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'galactic'), ('BOT_INITIAL_YAW', '90'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('FORWARE_CRTL_POINTS', '100'), ('TERM', 'xterm-256color'), ('BOT_INITIAL_X', '917'), ('FORWARE_ACELERATION_FC', '0.3'), ('ROS_LOCALHOST_ONLY', '0'), ('BOT_INITIAL_Y', '1047'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-49be5c6b2d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock'), ('AMENT_PREFIX_PATH', '/workspace/planner/ros2/install/utils:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('OPENCV_VERSION', '4.4.0'), ('OPENCV_CONTRIB_VERSION', '4.4.0'), ('FORWARE_PRINT_WAYPOINT', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UDEV', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '1'), ('PWD', '/workspace/planner/ros2/build/interfaces'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('DELETE_BUILD', '0'), ('TURN_CRTL_POINTS', '50'), ('COLCON', '1'), ('TURN_ACELERATION_FC', '0.5'), ('CMAKE_PREFIX_PATH', '/workspace/planner/ros2/install/utils:/opt/ros/galactic')]), 'shell': False}
+[3.209795] (-) TimerEvent: {}
+[3.285125] (interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[3.309910] (-) TimerEvent: {}
+[3.333851] (usr_msgs) StdoutLine: {'line': b'-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp\n'}
+[3.365358] (usr_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[3.365888] (interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[3.367939] (usr_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)\n'}
+[3.379931] (interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[3.399700] (usr_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[3.400187] (usr_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.400432] (usr_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[3.400521] (usr_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[3.410024] (-) TimerEvent: {}
+[3.424966] (usr_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.448830] (interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[3.451180] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.510124] (-) TimerEvent: {}
+[3.513256] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.554374] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.555789] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.563306] (interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[3.604495] (usr_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.609055] (usr_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.610193] (-) TimerEvent: {}
+[3.612035] (usr_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.636378] (usr_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.640753] (interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.644094] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.710312] (-) TimerEvent: {}
+[3.722348] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.761010] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.762400] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.765908] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[3.789467] (interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.789943] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.810425] (-) TimerEvent: {}
+[3.823202] (usr_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.827991] (usr_msgs) StdoutLine: {'line': b'-- Build files have been written to: /workspace/planner/ros2/build/usr_msgs\n'}
+[3.838264] (usr_msgs) CommandEnded: {'returncode': 0}
+[3.839970] (usr_msgs) JobProgress: {'identifier': 'usr_msgs', 'progress': 'build'}
+[3.840517] (usr_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/workspace/planner/ros2/build/usr_msgs', '--', '-j12', '-l12'], 'cwd': '/workspace/planner/ros2/build/usr_msgs', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_SOURCE_DIR', '/cmake_build'), ('TURN_TIME', '2.0'), ('HOSTNAME', 'servicedesk1'), ('GIT_ASKPASS', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}][{time}][{name}]: {message}'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('BROWSER', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh'), ('HOME', '/home/ada'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.64.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock'), ('ROS_PYTHON_VERSION', '3'), ('TURN_PRINT_WAYPOINT', '0'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'galactic'), ('BOT_INITIAL_YAW', '90'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('FORWARE_CRTL_POINTS', '100'), ('TERM', 'xterm-256color'), ('BOT_INITIAL_X', '917'), ('FORWARE_ACELERATION_FC', '0.3'), ('ROS_LOCALHOST_ONLY', '0'), ('BOT_INITIAL_Y', '1047'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-49be5c6b2d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('OPENCV_VERSION', '4.4.0'), ('OPENCV_CONTRIB_VERSION', '4.4.0'), ('FORWARE_PRINT_WAYPOINT', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UDEV', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '1'), ('PWD', '/workspace/planner/ros2/build/usr_msgs'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('DELETE_BUILD', '0'), ('TURN_CRTL_POINTS', '50'), ('COLCON', '1'), ('TURN_ACELERATION_FC', '0.5'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[3.866705] (interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.870329] (usr_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.871473] (usr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_msgs__cpp\x1b[0m\n'}
+[3.878395] (usr_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.903532] (interfaces) StdoutLine: {'line': b'-- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[3.911018] (-) TimerEvent: {}
+[4.011353] (-) TimerEvent: {}
+[4.049790] (interfaces) StdoutLine: {'line': b'-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c\n'}
+[4.068804] (interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[4.111490] (-) TimerEvent: {}
+[4.150689] (interfaces) StdoutLine: {'line': b'-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp\n'}
+[4.211595] (-) TimerEvent: {}
+[4.311962] (-) TimerEvent: {}
+[4.405834] (interfaces) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[4.412060] (-) TimerEvent: {}
+[4.413497] (interfaces) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[4.488203] (interfaces) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[4.490674] (interfaces) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.512228] (-) TimerEvent: {}
+[4.568251] (usr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_msgs__rosidl_generator_c\x1b[0m\n'}
+[4.578253] (usr_msgs) StdoutLine: {'line': b'[  4%] Built target usr_msgs__cpp\n'}
+[4.581118] (usr_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__rosidl_generator_c.dir/rosidl_generator_c/usr_msgs/msg/detail/turn_ref__functions.c.o\x1b[0m\n'}
+[4.581257] (usr_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__rosidl_generator_c.dir/rosidl_generator_c/usr_msgs/msg/detail/land_mark__functions.c.o\x1b[0m\n'}
+[4.581366] (usr_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__rosidl_generator_c.dir/rosidl_generator_c/usr_msgs/msg/detail/planner__functions.c.o\x1b[0m\n'}
+[4.581423] (usr_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__rosidl_generator_c.dir/rosidl_generator_c/usr_msgs/msg/detail/waypoint__functions.c.o\x1b[0m\n'}
+[4.581471] (usr_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__rosidl_generator_c.dir/rosidl_generator_c/usr_msgs/msg/detail/kiwibot__functions.c.o\x1b[0m\n'}
+[4.585922] (interfaces) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.586468] (interfaces) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.588842] (usr_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.612283] (-) TimerEvent: {}
+[4.636928] (usr_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libusr_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[4.673217] (usr_msgs) StdoutLine: {'line': b'[ 19%] Built target usr_msgs__rosidl_generator_c\n'}
+[4.677573] (interfaces) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[4.678011] (interfaces) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[4.679604] (usr_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.712395] (-) TimerEvent: {}
+[4.744326] (interfaces) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[4.744749] (interfaces) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[4.812488] (-) TimerEvent: {}
+[4.813563] (interfaces) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[4.816893] (interfaces) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.912598] (-) TimerEvent: {}
+[5.012872] (-) TimerEvent: {}
+[5.109444] (usr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[5.112996] (-) TimerEvent: {}
+[5.125546] (usr_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usr_msgs/msg/detail/kiwibot__type_support.cpp.o\x1b[0m\n'}
+[5.125825] (usr_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usr_msgs/msg/detail/planner__type_support.cpp.o\x1b[0m\n'}
+[5.125907] (usr_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usr_msgs/msg/detail/land_mark__type_support.cpp.o\x1b[0m\n'}
+[5.125973] (usr_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usr_msgs/msg/detail/turn_ref__type_support.cpp.o\x1b[0m\n'}
+[5.126031] (usr_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usr_msgs/msg/detail/waypoint__type_support.cpp.o\x1b[0m\n'}
+[5.213154] (-) TimerEvent: {}
+[5.221392] (usr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[5.236678] (usr_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usr_msgs/msg/detail/planner__type_support.c.o\x1b[0m\n'}
+[5.238394] (usr_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usr_msgs/msg/detail/turn_ref__type_support.c.o\x1b[0m\n'}
+[5.238603] (usr_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usr_msgs/msg/detail/waypoint__type_support.c.o\x1b[0m\n'}
+[5.238723] (usr_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usr_msgs/msg/detail/land_mark__type_support.c.o\x1b[0m\n'}
+[5.238834] (usr_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usr_msgs/msg/detail/kiwibot__type_support.c.o\x1b[0m\n'}
+[5.284679] (usr_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking C shared library libusr_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.309477] (usr_msgs) StdoutLine: {'line': b'[ 44%] Built target usr_msgs__rosidl_typesupport_introspection_c\n'}
+[5.313285] (-) TimerEvent: {}
+[5.317018] (usr_msgs) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.404247] (interfaces) StdoutLine: {'line': b'-- Found utils: 0.0.1 (/workspace/planner/ros2/install/utils/share/utils/cmake)\n'}
+[5.413589] (-) TimerEvent: {}
+[5.424946] (interfaces) StdoutLine: {'line': b'-- Found ALSA: /usr/lib/x86_64-linux-gnu/libasound.so (found version "1.2.2") \n'}
+[5.440552] (interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[5.513539] (-) TimerEvent: {}
+[5.604499] (interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.608422] (interfaces) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.609548] (interfaces) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /workspace/planner/ros2/src/interfaces/include;$<BUILD_INTERFACE:/workspace/planner/ros2/src/interfaces/include>\n'}
+[5.609636] (interfaces) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.612201] (interfaces) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[5.612502] (interfaces) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[5.613414] (usr_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libusr_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.613587] (-) TimerEvent: {}
+[5.614028] (interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.616631] (interfaces) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.616971] (interfaces) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.618086] (interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.629846] (interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.694164] (interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[5.696911] (interfaces) StdoutLine: {'line': b'-- Build files have been written to: /workspace/planner/ros2/build/interfaces\n'}
+[5.697107] (usr_msgs) StdoutLine: {'line': b'[ 48%] Built target usr_msgs__rosidl_typesupport_introspection_cpp\n'}
+[5.702138] (interfaces) CommandEnded: {'returncode': 0}
+[5.703340] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'build'}
+[5.703643] (usr_msgs) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.705446] (interfaces) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/workspace/planner/ros2/build/interfaces', '--', '-j12', '-l12'], 'cwd': '/workspace/planner/ros2/build/interfaces', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_SOURCE_DIR', '/cmake_build'), ('TURN_TIME', '2.0'), ('HOSTNAME', 'servicedesk1'), ('GIT_ASKPASS', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}][{time}][{name}]: {message}'), ('LD_LIBRARY_PATH', '/workspace/planner/ros2/install/utils/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('BROWSER', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh'), ('HOME', '/home/ada'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.64.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock'), ('ROS_PYTHON_VERSION', '3'), ('TURN_PRINT_WAYPOINT', '0'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'galactic'), ('BOT_INITIAL_YAW', '90'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('FORWARE_CRTL_POINTS', '100'), ('TERM', 'xterm-256color'), ('BOT_INITIAL_X', '917'), ('FORWARE_ACELERATION_FC', '0.3'), ('ROS_LOCALHOST_ONLY', '0'), ('BOT_INITIAL_Y', '1047'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-49be5c6b2d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock'), ('AMENT_PREFIX_PATH', '/workspace/planner/ros2/install/utils:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('OPENCV_VERSION', '4.4.0'), ('OPENCV_CONTRIB_VERSION', '4.4.0'), ('FORWARE_PRINT_WAYPOINT', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UDEV', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '1'), ('PWD', '/workspace/planner/ros2/build/interfaces'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('DELETE_BUILD', '0'), ('TURN_CRTL_POINTS', '50'), ('COLCON', '1'), ('TURN_ACELERATION_FC', '0.5'), ('CMAKE_PREFIX_PATH', '/workspace/planner/ros2/install/utils:/opt/ros/galactic')]), 'shell': False}
+[5.713694] (-) TimerEvent: {}
+[5.736208] (interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_node\x1b[0m\n'}
+[5.813833] (-) TimerEvent: {}
+[5.848164] (interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_node.dir/src/modules/speaker.cpp.o\x1b[0m\n'}
+[5.848635] (interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_node.dir/src/interfaces_node.cpp.o\x1b[0m\n'}
+[5.871712] (usr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[5.884046] (usr_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/usr_msgs/msg/planner__type_support.cpp.o\x1b[0m\n'}
+[5.884584] (usr_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/usr_msgs/msg/land_mark__type_support.cpp.o\x1b[0m\n'}
+[5.884840] (usr_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/usr_msgs/msg/waypoint__type_support.cpp.o\x1b[0m\n'}
+[5.884970] (usr_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/usr_msgs/msg/kiwibot__type_support.cpp.o\x1b[0m\n'}
+[5.885039] (usr_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/usr_msgs/msg/turn_ref__type_support.cpp.o\x1b[0m\n'}
+[5.914999] (-) TimerEvent: {}
+[5.924987] (usr_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libusr_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.964937] (usr_msgs) StdoutLine: {'line': b'[ 63%] Built target usr_msgs__rosidl_typesupport_c\n'}
+[6.014986] (-) TimerEvent: {}
+[6.052441] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:37:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K"/*" within comment [\x1b[01;35m\x1b[K-Wcomment\x1b[m\x1b[K]\n'}
+[6.052648] (interfaces) StderrLine: {'line': b'   37 |     /* Open the PCM device in playback mode */\n'}
+[6.052723] (interfaces) StderrLine: {'line': b'      |      \n'}
+[6.115112] (-) TimerEvent: {}
+[6.215421] (-) TimerEvent: {}
+[6.216690] (usr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[6.234003] (usr_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usr_msgs/msg/waypoint__type_support.cpp.o\x1b[0m\n'}
+[6.235267] (usr_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usr_msgs/msg/planner__type_support.cpp.o\x1b[0m\n'}
+[6.236193] (usr_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usr_msgs/msg/land_mark__type_support.cpp.o\x1b[0m\n'}
+[6.236299] (usr_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usr_msgs/msg/kiwibot__type_support.cpp.o\x1b[0m\n'}
+[6.236476] (usr_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usr_msgs/msg/turn_ref__type_support.cpp.o\x1b[0m\n'}
+[6.315597] (-) TimerEvent: {}
+[6.416195] (-) TimerEvent: {}
+[6.516562] (-) TimerEvent: {}
+[6.617042] (-) TimerEvent: {}
+[6.709886] (usr_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libusr_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[6.717157] (-) TimerEvent: {}
+[6.749415] (usr_msgs) StdoutLine: {'line': b'[ 76%] Built target usr_msgs__rosidl_typesupport_cpp\n'}
+[6.755208] (usr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_msgs\x1b[0m\n'}
+[6.760667] (usr_msgs) StdoutLine: {'line': b'[ 76%] Built target usr_msgs\n'}
+[6.766793] (usr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_msgs__py\x1b[0m\n'}
+[6.774142] (usr_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.817271] (-) TimerEvent: {}
+[6.917626] (-) TimerEvent: {}
+[7.017932] (-) TimerEvent: {}
+[7.118242] (-) TimerEvent: {}
+[7.219012] (-) TimerEvent: {}
+[7.319442] (-) TimerEvent: {}
+[7.419756] (-) TimerEvent: {}
+[7.520056] (-) TimerEvent: {}
+[7.620360] (-) TimerEvent: {}
+[7.721227] (-) TimerEvent: {}
+[7.821703] (-) TimerEvent: {}
+[7.870016] (usr_msgs) StdoutLine: {'line': b'[ 78%] Built target usr_msgs__py\n'}
+[7.876155] (usr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_msgs__python\x1b[0m\n'}
+[7.921896] (usr_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__python.dir/rosidl_generator_py/usr_msgs/msg/_land_mark_s.c.o\x1b[0m\n'}
+[7.922189] (-) TimerEvent: {}
+[7.922303] (usr_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__python.dir/rosidl_generator_py/usr_msgs/msg/_planner_s.c.o\x1b[0m\n'}
+[7.922386] (usr_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__python.dir/rosidl_generator_py/usr_msgs/msg/_waypoint_s.c.o\x1b[0m\n'}
+[7.923288] (usr_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__python.dir/rosidl_generator_py/usr_msgs/msg/_kiwibot_s.c.o\x1b[0m\n'}
+[7.923665] (usr_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__python.dir/rosidl_generator_py/usr_msgs/msg/_turn_ref_s.c.o\x1b[0m\n'}
+[8.022387] (-) TimerEvent: {}
+[8.089640] (usr_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/usr_msgs/libusr_msgs__python.so\x1b[0m\n'}
+[8.122641] (-) TimerEvent: {}
+[8.129075] (usr_msgs) StdoutLine: {'line': b'[ 91%] Built target usr_msgs__python\n'}
+[8.138023] (usr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[8.138237] (usr_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[8.155768] (usr_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/usr_msgs/_usr_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[8.155993] (usr_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/usr_msgs/_usr_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[8.223109] (-) TimerEvent: {}
+[8.261151] (usr_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/usr_msgs/usr_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[8.296250] (usr_msgs) StdoutLine: {'line': b'[ 97%] Built target usr_msgs__rosidl_typesupport_c__pyext\n'}
+[8.296875] (usr_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/usr_msgs/usr_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[8.312650] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSpeaker::Speaker(rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.312942] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:38:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[8.313012] (interfaces) StderrLine: {'line': b'   38 |     if (\x1b[01;35m\x1b[Kpcm = (snd_pcm_open(&pcm_handle, m_sound_device.c_str(), SND_PCM_STREAM_PLAYBACK, 0) < 0)\x1b[m\x1b[K)\n'}
+[8.313078] (interfaces) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.313594] (interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[8.313970] (interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[8.314058] (interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[8.314129] (interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[8.314181] (interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[8.314255] (interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[8.314308] (interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor.hpp:36\x1b[m\x1b[K,\n'}
+[8.314358] (interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[8.314415] (interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[8.314619] (interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[8.315105] (interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/include/modules/speaker.hpp:12\x1b[m\x1b[K,\n'}
+[8.315180] (interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:8\x1b[m\x1b[K:\n'}
+[8.315284] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:39:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[8.315414] (interfaces) StderrLine: {'line': b'   39 |         RCLCPP_ERROR(this->get_logger(), \x1b[01;35m\x1b[K"ERROR: Can\'t open \\"%s\\" PCM device. %s"\x1b[m\x1b[K, m_sound_device, snd_strerror(pcm));\n'}
+[8.315468] (interfaces) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.315519] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:39:64:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[8.315596] (interfaces) StderrLine: {'line': b'   39 |         RCLCPP_ERROR(this->get_logger(), "ERROR: Can\'t open \\"\x1b[01;36m\x1b[K%s\x1b[m\x1b[K\\" PCM device. %s", m_sound_device, snd_strerror(pcm));\n'}
+[8.315661] (interfaces) StderrLine: {'line': b'      |                                                               \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[8.315771] (interfaces) StderrLine: {'line': b'      |                                                                \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[8.315904] (interfaces) StderrLine: {'line': b'      |                                                                \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[8.316134] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:46:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[8.316192] (interfaces) StderrLine: {'line': b'   46 |     if (\x1b[01;35m\x1b[Kpcm = (snd_pcm_hw_params_set_access(pcm_handle, params, SND_PCM_ACCESS_RW_INTERLEAVED) < 0)\x1b[m\x1b[K)\n'}
+[8.316243] (interfaces) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.316293] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:49:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[8.316346] (interfaces) StderrLine: {'line': b'   49 |     if (\x1b[01;35m\x1b[Kpcm = (snd_pcm_hw_params_set_format(pcm_handle, params, SND_PCM_FORMAT_S16_LE) < 0)\x1b[m\x1b[K)\n'}
+[8.316400] (interfaces) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.316451] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:53:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[8.316512] (interfaces) StderrLine: {'line': b'   53 |     if (\x1b[01;35m\x1b[Kpcm = (snd_pcm_hw_params_set_channels(pcm_handle, params, channels) < 0)\x1b[m\x1b[K)\n'}
+[8.316564] (interfaces) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.316613] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:56:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[8.316663] (interfaces) StderrLine: {'line': b'   56 |     if (\x1b[01;35m\x1b[Kpcm = (snd_pcm_hw_params_set_rate_near(pcm_handle, params, &rate, 0) < 0)\x1b[m\x1b[K)\n'}
+[8.316787] (interfaces) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.317650] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:60:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[8.317713] (interfaces) StderrLine: {'line': b'   60 |     if (\x1b[01;35m\x1b[Kpcm = (snd_pcm_hw_params(pcm_handle, params) < 0)\x1b[m\x1b[K)\n'}
+[8.317775] (interfaces) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.320712] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:82:82:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kconverting from \xe2\x80\x98\x1b[01m\x1b[Kvoid* (Speaker::*)()\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[KSpeaker::THREADFUNCPTR\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kvoid* (*)(void*)\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.320886] (interfaces) StderrLine: {'line': b'   82 |     ambient = pthread_create(&pthread_id_ambient, NULL, (THREADFUNCPTR)&Speaker::\x1b[01;35m\x1b[KAmbientSound\x1b[m\x1b[K, this);\n'}
+[8.320940] (interfaces) StderrLine: {'line': b'      |                                                                                  \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.323197] (-) TimerEvent: {}
+[8.332246] (usr_msgs) StdoutLine: {'line': b'[100%] Built target usr_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[8.340843] (usr_msgs) CommandEnded: {'returncode': 0}
+[8.413092] (usr_msgs) JobProgress: {'identifier': 'usr_msgs', 'progress': 'install'}
+[8.413417] (usr_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/workspace/planner/ros2/build/usr_msgs'], 'cwd': '/workspace/planner/ros2/build/usr_msgs', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_SOURCE_DIR', '/cmake_build'), ('TURN_TIME', '2.0'), ('HOSTNAME', 'servicedesk1'), ('GIT_ASKPASS', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}][{time}][{name}]: {message}'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('BROWSER', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh'), ('HOME', '/home/ada'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.64.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock'), ('ROS_PYTHON_VERSION', '3'), ('TURN_PRINT_WAYPOINT', '0'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'galactic'), ('BOT_INITIAL_YAW', '90'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('FORWARE_CRTL_POINTS', '100'), ('TERM', 'xterm-256color'), ('BOT_INITIAL_X', '917'), ('FORWARE_ACELERATION_FC', '0.3'), ('ROS_LOCALHOST_ONLY', '0'), ('BOT_INITIAL_Y', '1047'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-49be5c6b2d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('OPENCV_VERSION', '4.4.0'), ('OPENCV_CONTRIB_VERSION', '4.4.0'), ('FORWARE_PRINT_WAYPOINT', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UDEV', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '1'), ('PWD', '/workspace/planner/ros2/build/usr_msgs'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('DELETE_BUILD', '0'), ('TURN_CRTL_POINTS', '50'), ('COLCON', '1'), ('TURN_ACELERATION_FC', '0.5'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[8.421407] (usr_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.423236] (usr_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.423391] (-) TimerEvent: {}
+[8.424611] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/ament_index/resource_index/rosidl_interfaces/usr_msgs\n'}
+[8.430873] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__functions.h\n'}
+[8.437401] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__struct.h\n'}
+[8.442059] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__type_support.h\n'}
+[8.445995] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__functions.h\n'}
+[8.449786] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__struct.h\n'}
+[8.454408] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__type_support.h\n'}
+[8.459103] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__functions.h\n'}
+[8.463235] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__struct.h\n'}
+[8.467594] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__type_support.h\n'}
+[8.471989] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__functions.h\n'}
+[8.476958] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__struct.h\n'}
+[8.481724] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__type_support.h\n'}
+[8.486240] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__functions.h\n'}
+[8.490295] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__struct.h\n'}
+[8.494893] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__type_support.h\n'}
+[8.499396] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/kiwibot.h\n'}
+[8.503368] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/land_mark.h\n'}
+[8.507710] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/planner.h\n'}
+[8.512062] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.516412] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/turn_ref.h\n'}
+[8.520867] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/waypoint.h\n'}
+[8.523503] (-) TimerEvent: {}
+[8.526039] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/library_path.sh\n'}
+[8.531692] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/library_path.dsv\n'}
+[8.539602] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__rosidl_typesupport_introspection_c.h\n'}
+[8.544419] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__rosidl_typesupport_introspection_c.h\n'}
+[8.548862] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__rosidl_typesupport_introspection_c.h\n'}
+[8.552922] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__rosidl_typesupport_introspection_c.h\n'}
+[8.556755] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__rosidl_typesupport_introspection_c.h\n'}
+[8.561314] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.566403] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__builder.hpp\n'}
+[8.571504] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__struct.hpp\n'}
+[8.575974] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__traits.hpp\n'}
+[8.580564] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__builder.hpp\n'}
+[8.582230] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Speaker::speakerCb(std_msgs::msg::Int8_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.582507] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:100:81:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kconverting from \xe2\x80\x98\x1b[01m\x1b[Kvoid* (Speaker::*)()\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[KSpeaker::THREADFUNCPTR\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kvoid* (*)(void*)\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.582941] (interfaces) StderrLine: {'line': b'  100 |             status = pthread_create(&pthread_id, NULL, (THREADFUNCPTR)&Speaker::\x1b[01;35m\x1b[KPlaySound\x1b[m\x1b[K, this);\n'}
+[8.583003] (interfaces) StderrLine: {'line': b'      |                                                                                 \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.583058] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:107:81:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kconverting from \xe2\x80\x98\x1b[01m\x1b[Kvoid* (Speaker::*)()\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[KSpeaker::THREADFUNCPTR\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kvoid* (*)(void*)\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[8.583117] (interfaces) StderrLine: {'line': b'  107 |             status = pthread_create(&pthread_id, NULL, (THREADFUNCPTR)&Speaker::\x1b[01;35m\x1b[KPlaySound\x1b[m\x1b[K, this);\n'}
+[8.583169] (interfaces) StderrLine: {'line': b'      |                                                                                 \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.585647] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__struct.hpp\n'}
+[8.589803] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__traits.hpp\n'}
+[8.592425] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid* Speaker::PlaySound()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.592665] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:142:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[8.592818] (interfaces) StderrLine: {'line': b'  142 |     while (\x1b[01;35m\x1b[Kreadval = (read(readfd, buff, buff_size) > 0)\x1b[m\x1b[K)\n'}
+[8.592876] (interfaces) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.592930] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:144:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[8.592986] (interfaces) StderrLine: {'line': b'  144 |         if (pcm \x1b[01;35m\x1b[K=\x1b[m\x1b[K snd_pcm_writei(pcm_handle, buff, frames) == -EPIPE)\n'}
+[8.593040] (interfaces) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.593544] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:169:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[8.593675] (interfaces) StderrLine: {'line': b'  169 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[8.593728] (interfaces) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.594158] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__builder.hpp\n'}
+[8.594367] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid* Speaker::AmbientSound()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.594637] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:183:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[8.594745] (interfaces) StderrLine: {'line': b'  183 |             while (\x1b[01;35m\x1b[Kreadval_ambient = (read(readfd_ambient, buff_ambient, buff_size_ambient) > 0)\x1b[m\x1b[K)\n'}
+[8.594799] (interfaces) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.594850] (interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/planner/ros2/src/interfaces/src/modules/speaker.cpp:187:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K-Wparentheses\x1b[m\x1b[K]\n'}
+[8.594961] (interfaces) StderrLine: {'line': b'  187 |                     if (pcm \x1b[01;35m\x1b[K=\x1b[m\x1b[K snd_pcm_writei(pcm_handle, buff_ambient, frames) == -EPIPE)\n'}
+[8.595016] (interfaces) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[8.598663] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__struct.hpp\n'}
+[8.603351] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__traits.hpp\n'}
+[8.607413] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__builder.hpp\n'}
+[8.612084] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__struct.hpp\n'}
+[8.616375] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__traits.hpp\n'}
+[8.620754] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__builder.hpp\n'}
+[8.623601] (-) TimerEvent: {}
+[8.625434] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__struct.hpp\n'}
+[8.631354] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__traits.hpp\n'}
+[8.636337] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/kiwibot.hpp\n'}
+[8.641407] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/land_mark.hpp\n'}
+[8.647953] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/planner.hpp\n'}
+[8.652546] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/turn_ref.hpp\n'}
+[8.656818] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/waypoint.hpp\n'}
+[8.661796] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.666108] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.670111] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.673432] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.677322] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.681759] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/pythonpath.sh\n'}
+[8.686193] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/pythonpath.dsv\n'}
+[8.691796] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/__init__.py\n'}
+[8.697148] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/__init__.py\n'}
+[8.701790] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_kiwibot.py\n'}
+[8.705747] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_land_mark.py\n'}
+[8.709685] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_planner.py\n'}
+[8.714036] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_turn_ref.py\n'}
+[8.719339] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_waypoint.py\n'}
+[8.723887] (-) TimerEvent: {}
+[8.725045] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/usr_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[8.731792] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/usr_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[8.738611] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__python.so\n'}
+[8.744359] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/Planner.idl\n'}
+[8.750013] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/LandMark.idl\n'}
+[8.754227] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/Waypoint.idl\n'}
+[8.758699] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/TurnRef.idl\n'}
+[8.762660] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/Kiwibot.idl\n'}
+[8.767342] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/path_planner/Planner.msg\n'}
+[8.772292] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/path_planner/LandMark.msg\n'}
+[8.777076] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/path_planner/Waypoint.msg\n'}
+[8.781947] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/path_planner/TurnRef.msg\n'}
+[8.786046] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/bot_status/Kiwibot.msg\n'}
+[8.790252] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/ament_index/resource_index/package_run_dependencies/usr_msgs\n'}
+[8.795225] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/ament_index/resource_index/parent_prefix_path/usr_msgs\n'}
+[8.799534] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/ament_prefix_path.sh\n'}
+[8.803763] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/ament_prefix_path.dsv\n'}
+[8.808533] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/path.sh\n'}
+[8.813169] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/path.dsv\n'}
+[8.817979] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/local_setup.bash\n'}
+[8.822221] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/local_setup.sh\n'}
+[8.823985] (-) TimerEvent: {}
+[8.828222] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/local_setup.zsh\n'}
+[8.835624] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/local_setup.dsv\n'}
+[8.843727] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/package.dsv\n'}
+[8.848846] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/ament_index/resource_index/packages/usr_msgs\n'}
+[8.854138] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[8.858662] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.863048] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.867767] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.872839] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.877733] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.882206] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgsConfig.cmake\n'}
+[8.886038] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgsConfig-version.cmake\n'}
+[8.890405] (usr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/package.xml\n'}
+[8.894969] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_generator_c.so\n'}
+[8.896228] (usr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_generator_c.so" to ""\n'}
+[8.896891] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_introspection_c.so\n'}
+[8.897667] (usr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[8.897897] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_c.so\n'}
+[8.898319] (usr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_c.so" to ""\n'}
+[8.899007] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[8.899909] (usr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[8.900699] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_cpp.so\n'}
+[8.901281] (usr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[8.924187] (-) TimerEvent: {}
+[8.941923] (usr_msgs) StdoutLine: {'line': b"Compiling '/workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/__init__.py'...\n"}
+[8.954316] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_generator_cExport.cmake\n'}
+[8.955053] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.955912] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.956428] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.957129] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_cExport.cmake\n'}
+[8.957469] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.958001] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_generator_cppExport.cmake\n'}
+[8.958337] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.958851] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.959260] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[8.959888] (usr_msgs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.963897] (usr_msgs) CommandEnded: {'returncode': 0}
+[9.024320] (-) TimerEvent: {}
+[9.064526] (usr_msgs) JobEnded: {'identifier': 'usr_msgs', 'rc': 0}
+[9.065841] (usr_srvs) JobStarted: {'identifier': 'usr_srvs'}
+[9.077524] (usr_srvs) JobProgress: {'identifier': 'usr_srvs', 'progress': 'cmake'}
+[9.079946] (usr_srvs) Command: {'cmd': ['/usr/local/bin/cmake', '/workspace/planner/ros2/src/usr_srvs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspace/planner/ros2/install/usr_srvs'], 'cwd': '/workspace/planner/ros2/build/usr_srvs', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_SOURCE_DIR', '/cmake_build'), ('TURN_TIME', '2.0'), ('HOSTNAME', 'servicedesk1'), ('GIT_ASKPASS', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}][{time}][{name}]: {message}'), ('LD_LIBRARY_PATH', '/workspace/planner/ros2/install/usr_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('BROWSER', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh'), ('HOME', '/home/ada'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.64.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock'), ('ROS_PYTHON_VERSION', '3'), ('TURN_PRINT_WAYPOINT', '0'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'galactic'), ('BOT_INITIAL_YAW', '90'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('FORWARE_CRTL_POINTS', '100'), ('TERM', 'xterm-256color'), ('BOT_INITIAL_X', '917'), ('FORWARE_ACELERATION_FC', '0.3'), ('ROS_LOCALHOST_ONLY', '0'), ('BOT_INITIAL_Y', '1047'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-49be5c6b2d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock'), ('AMENT_PREFIX_PATH', '/workspace/planner/ros2/install/usr_msgs:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('OPENCV_VERSION', '4.4.0'), ('OPENCV_CONTRIB_VERSION', '4.4.0'), ('FORWARE_PRINT_WAYPOINT', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UDEV', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '1'), ('PWD', '/workspace/planner/ros2/build/usr_srvs'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('DELETE_BUILD', '0'), ('TURN_CRTL_POINTS', '50'), ('COLCON', '1'), ('TURN_ACELERATION_FC', '0.5'), ('CMAKE_PREFIX_PATH', '/workspace/planner/ros2/install/usr_msgs:/opt/ros/galactic')]), 'shell': False}
+[9.124445] (-) TimerEvent: {}
+[9.177893] (usr_srvs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[9.224586] (-) TimerEvent: {}
+[9.279373] (usr_srvs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[9.297428] (usr_srvs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[9.324797] (-) TimerEvent: {}
+[9.376853] (usr_srvs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[9.380891] (usr_srvs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[9.424949] (-) TimerEvent: {}
+[9.462277] (usr_srvs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[9.509452] (usr_srvs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[9.510424] (usr_srvs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[9.519970] (usr_srvs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[9.525119] (-) TimerEvent: {}
+[9.612761] (usr_srvs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[9.615957] (usr_srvs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[9.625238] (-) TimerEvent: {}
+[9.700554] (usr_srvs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.725350] (-) TimerEvent: {}
+[9.742246] (usr_srvs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.744328] (usr_srvs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.747967] (usr_srvs) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[9.775238] (usr_srvs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[9.775625] (usr_srvs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.825495] (-) TimerEvent: {}
+[9.881271] (usr_srvs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[9.925604] (-) TimerEvent: {}
+[9.933942] (usr_srvs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)\n'}
+[9.948362] (usr_srvs) StdoutLine: {'line': b'-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c\n'}
+[9.969559] (usr_srvs) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[10.025711] (-) TimerEvent: {}
+[10.084617] (usr_srvs) StdoutLine: {'line': b'-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp\n'}
+[10.125845] (-) TimerEvent: {}
+[10.194291] (usr_srvs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.0.3 (/opt/ros/galactic/share/builtin_interfaces/cmake)\n'}
+[10.225992] (-) TimerEvent: {}
+[10.229844] (usr_srvs) StdoutLine: {'line': b'-- Found std_msgs: 2.2.4 (/opt/ros/galactic/share/std_msgs/cmake)\n'}
+[10.285319] (usr_srvs) StdoutLine: {'line': b'-- Found usr_msgs: 0.0.1 (/workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake)\n'}
+[10.326101] (-) TimerEvent: {}
+[10.400011] (usr_srvs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[10.426227] (-) TimerEvent: {}
+[10.512675] (usr_srvs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[10.526321] (-) TimerEvent: {}
+[10.626714] (-) TimerEvent: {}
+[10.727018] (-) TimerEvent: {}
+[10.827311] (-) TimerEvent: {}
+[10.927614] (-) TimerEvent: {}
+[11.005283] (usr_srvs) StdoutLine: {'line': b'-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c\n'}
+[11.027723] (-) TimerEvent: {}
+[11.128027] (-) TimerEvent: {}
+[11.228338] (-) TimerEvent: {}
+[11.325740] (usr_srvs) StdoutLine: {'line': b'-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp\n'}
+[11.328440] (-) TimerEvent: {}
+[11.364455] (usr_srvs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[11.366208] (usr_srvs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)\n'}
+[11.404518] (usr_srvs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[11.404865] (usr_srvs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[11.405034] (usr_srvs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[11.405098] (usr_srvs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[11.423942] (usr_srvs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[11.428687] (-) TimerEvent: {}
+[11.529205] (-) TimerEvent: {}
+[11.629682] (-) TimerEvent: {}
+[11.633742] (usr_srvs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[11.637885] (usr_srvs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[11.641337] (usr_srvs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[11.662363] (usr_srvs) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.729824] (-) TimerEvent: {}
+[11.830199] (-) TimerEvent: {}
+[11.925634] (usr_srvs) StdoutLine: {'line': b'-- Generating done\n'}
+[11.929362] (usr_srvs) StdoutLine: {'line': b'-- Build files have been written to: /workspace/planner/ros2/build/usr_srvs\n'}
+[11.930257] (-) TimerEvent: {}
+[11.936401] (usr_srvs) CommandEnded: {'returncode': 0}
+[11.937188] (usr_srvs) JobProgress: {'identifier': 'usr_srvs', 'progress': 'build'}
+[11.937427] (usr_srvs) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/workspace/planner/ros2/build/usr_srvs', '--', '-j12', '-l12'], 'cwd': '/workspace/planner/ros2/build/usr_srvs', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_SOURCE_DIR', '/cmake_build'), ('TURN_TIME', '2.0'), ('HOSTNAME', 'servicedesk1'), ('GIT_ASKPASS', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}][{time}][{name}]: {message}'), ('LD_LIBRARY_PATH', '/workspace/planner/ros2/install/usr_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('BROWSER', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh'), ('HOME', '/home/ada'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.64.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock'), ('ROS_PYTHON_VERSION', '3'), ('TURN_PRINT_WAYPOINT', '0'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'galactic'), ('BOT_INITIAL_YAW', '90'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('FORWARE_CRTL_POINTS', '100'), ('TERM', 'xterm-256color'), ('BOT_INITIAL_X', '917'), ('FORWARE_ACELERATION_FC', '0.3'), ('ROS_LOCALHOST_ONLY', '0'), ('BOT_INITIAL_Y', '1047'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-49be5c6b2d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock'), ('AMENT_PREFIX_PATH', '/workspace/planner/ros2/install/usr_msgs:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('OPENCV_VERSION', '4.4.0'), ('OPENCV_CONTRIB_VERSION', '4.4.0'), ('FORWARE_PRINT_WAYPOINT', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UDEV', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '1'), ('PWD', '/workspace/planner/ros2/build/usr_srvs'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('DELETE_BUILD', '0'), ('TURN_CRTL_POINTS', '50'), ('COLCON', '1'), ('TURN_ACELERATION_FC', '0.5'), ('CMAKE_PREFIX_PATH', '/workspace/planner/ros2/install/usr_msgs:/opt/ros/galactic')]), 'shell': False}
+[11.970326] (usr_srvs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[11.971094] (usr_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_srvs__cpp\x1b[0m\n'}
+[11.978057] (usr_srvs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[12.030374] (-) TimerEvent: {}
+[12.131128] (-) TimerEvent: {}
+[12.231472] (-) TimerEvent: {}
+[12.277977] (usr_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_srvs__rosidl_generator_c\x1b[0m\n'}
+[12.288595] (usr_srvs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/usr_srvs__rosidl_generator_c.dir/rosidl_generator_c/usr_srvs/srv/detail/turn__functions.c.o\x1b[0m\n'}
+[12.289072] (usr_srvs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/usr_srvs__rosidl_generator_c.dir/rosidl_generator_c/usr_srvs/srv/detail/move__functions.c.o\x1b[0m\n'}
+[12.292805] (usr_srvs) StdoutLine: {'line': b'[ 13%] Built target usr_srvs__cpp\n'}
+[12.299630] (usr_srvs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[12.329630] (usr_srvs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libusr_srvs__rosidl_generator_c.so\x1b[0m\n'}
+[12.331587] (-) TimerEvent: {}
+[12.364622] (usr_srvs) StdoutLine: {'line': b'[ 20%] Built target usr_srvs__rosidl_generator_c\n'}
+[12.370931] (usr_srvs) StdoutLine: {'line': b'[ 24%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[12.431836] (-) TimerEvent: {}
+[12.532320] (-) TimerEvent: {}
+[12.601088] (usr_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_srvs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[12.612195] (usr_srvs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/usr_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usr_srvs/srv/detail/turn__type_support.cpp.o\x1b[0m\n'}
+[12.612512] (usr_srvs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/usr_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usr_srvs/srv/detail/move__type_support.cpp.o\x1b[0m\n'}
+[12.632430] (-) TimerEvent: {}
+[12.679399] (usr_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_srvs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[12.691237] (usr_srvs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/usr_srvs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usr_srvs/srv/detail/turn__type_support.c.o\x1b[0m\n'}
+[12.691466] (usr_srvs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/usr_srvs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usr_srvs/srv/detail/move__type_support.c.o\x1b[0m\n'}
+[12.725661] (usr_srvs) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking C shared library libusr_srvs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[12.732568] (-) TimerEvent: {}
+[12.754353] (usr_srvs) StdoutLine: {'line': b'[ 41%] Built target usr_srvs__rosidl_typesupport_introspection_c\n'}
+[12.761762] (usr_srvs) StdoutLine: {'line': b'[ 44%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.832675] (-) TimerEvent: {}
+[12.932965] (-) TimerEvent: {}
+[12.994891] (usr_srvs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libusr_srvs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[13.022599] (usr_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_srvs__rosidl_typesupport_c\x1b[0m\n'}
+[13.033185] (-) TimerEvent: {}
+[13.037964] (usr_srvs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/usr_srvs__rosidl_typesupport_c.dir/rosidl_typesupport_c/usr_srvs/srv/move__type_support.cpp.o\x1b[0m\n'}
+[13.038191] (usr_srvs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/usr_srvs__rosidl_typesupport_c.dir/rosidl_typesupport_c/usr_srvs/srv/turn__type_support.cpp.o\x1b[0m\n'}
+[13.073623] (usr_srvs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libusr_srvs__rosidl_typesupport_c.so\x1b[0m\n'}
+[13.098068] (usr_srvs) StdoutLine: {'line': b'[ 58%] Built target usr_srvs__rosidl_typesupport_introspection_cpp\n'}
+[13.104928] (usr_srvs) StdoutLine: {'line': b'[ 62%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[13.107624] (usr_srvs) StdoutLine: {'line': b'[ 62%] Built target usr_srvs__rosidl_typesupport_c\n'}
+[13.133270] (-) TimerEvent: {}
+[13.233681] (-) TimerEvent: {}
+[13.331460] (usr_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_srvs__rosidl_typesupport_cpp\x1b[0m\n'}
+[13.333802] (-) TimerEvent: {}
+[13.343697] (usr_srvs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/usr_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usr_srvs/srv/move__type_support.cpp.o\x1b[0m\n'}
+[13.344484] (usr_srvs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/usr_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usr_srvs/srv/turn__type_support.cpp.o\x1b[0m\n'}
+[13.433925] (-) TimerEvent: {}
+[13.534227] (-) TimerEvent: {}
+[13.634636] (-) TimerEvent: {}
+[13.638973] (usr_srvs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libusr_srvs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[13.677088] (usr_srvs) StdoutLine: {'line': b'[ 72%] Built target usr_srvs__rosidl_typesupport_cpp\n'}
+[13.683102] (usr_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_srvs\x1b[0m\n'}
+[13.688837] (usr_srvs) StdoutLine: {'line': b'[ 72%] Built target usr_srvs\n'}
+[13.695109] (usr_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_srvs__py\x1b[0m\n'}
+[13.702228] (usr_srvs) StdoutLine: {'line': b'[ 75%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[13.734750] (-) TimerEvent: {}
+[13.835069] (-) TimerEvent: {}
+[13.935364] (-) TimerEvent: {}
+[14.035648] (-) TimerEvent: {}
+[14.136030] (-) TimerEvent: {}
+[14.188718] (usr_srvs) StdoutLine: {'line': b'[ 75%] Built target usr_srvs__py\n'}
+[14.196250] (usr_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_srvs__python\x1b[0m\n'}
+[14.223578] (usr_srvs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/usr_srvs__python.dir/rosidl_generator_py/usr_srvs/srv/_move_s.c.o\x1b[0m\n'}
+[14.223995] (usr_srvs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/usr_srvs__python.dir/rosidl_generator_py/usr_srvs/srv/_turn_s.c.o\x1b[0m\n'}
+[14.236147] (-) TimerEvent: {}
+[14.327600] (usr_srvs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/usr_srvs/libusr_srvs__python.so\x1b[0m\n'}
+[14.336264] (-) TimerEvent: {}
+[14.374747] (usr_srvs) StdoutLine: {'line': b'[ 86%] Built target usr_srvs__python\n'}
+[14.380450] (usr_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_srvs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[14.380627] (usr_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usr_srvs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[14.397165] (usr_srvs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/usr_srvs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/usr_srvs/_usr_srvs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.398442] (usr_srvs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/usr_srvs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/usr_srvs/_usr_srvs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.436374] (-) TimerEvent: {}
+[14.490253] (usr_srvs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/usr_srvs/usr_srvs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.493082] (usr_srvs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/usr_srvs/usr_srvs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.523772] (usr_srvs) StdoutLine: {'line': b'[100%] Built target usr_srvs__rosidl_typesupport_c__pyext\n'}
+[14.526434] (usr_srvs) StdoutLine: {'line': b'[100%] Built target usr_srvs__rosidl_typesupport_introspection_c__pyext\n'}
+[14.532406] (usr_srvs) CommandEnded: {'returncode': 0}
+[14.536498] (-) TimerEvent: {}
+[14.582171] (usr_srvs) JobProgress: {'identifier': 'usr_srvs', 'progress': 'install'}
+[14.583035] (usr_srvs) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/workspace/planner/ros2/build/usr_srvs'], 'cwd': '/workspace/planner/ros2/build/usr_srvs', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_SOURCE_DIR', '/cmake_build'), ('TURN_TIME', '2.0'), ('HOSTNAME', 'servicedesk1'), ('GIT_ASKPASS', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}][{time}][{name}]: {message}'), ('LD_LIBRARY_PATH', '/workspace/planner/ros2/install/usr_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('BROWSER', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh'), ('HOME', '/home/ada'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.64.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock'), ('ROS_PYTHON_VERSION', '3'), ('TURN_PRINT_WAYPOINT', '0'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'galactic'), ('BOT_INITIAL_YAW', '90'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('FORWARE_CRTL_POINTS', '100'), ('TERM', 'xterm-256color'), ('BOT_INITIAL_X', '917'), ('FORWARE_ACELERATION_FC', '0.3'), ('ROS_LOCALHOST_ONLY', '0'), ('BOT_INITIAL_Y', '1047'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-49be5c6b2d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock'), ('AMENT_PREFIX_PATH', '/workspace/planner/ros2/install/usr_msgs:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('OPENCV_VERSION', '4.4.0'), ('OPENCV_CONTRIB_VERSION', '4.4.0'), ('FORWARE_PRINT_WAYPOINT', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UDEV', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '1'), ('PWD', '/workspace/planner/ros2/build/usr_srvs'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('DELETE_BUILD', '0'), ('TURN_CRTL_POINTS', '50'), ('COLCON', '1'), ('TURN_ACELERATION_FC', '0.5'), ('CMAKE_PREFIX_PATH', '/workspace/planner/ros2/install/usr_msgs:/opt/ros/galactic')]), 'shell': False}
+[14.589888] (usr_srvs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.591981] (usr_srvs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[14.592481] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/ament_index/resource_index/rosidl_interfaces/usr_srvs\n'}
+[14.597759] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/msg/rosidl_generator_c__visibility_control.h\n'}
+[14.601735] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/move__functions.h\n'}
+[14.606205] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/move__struct.h\n'}
+[14.610877] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/move__type_support.h\n'}
+[14.615585] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/turn__functions.h\n'}
+[14.621299] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/turn__struct.h\n'}
+[14.627912] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/turn__type_support.h\n'}
+[14.633536] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/move.h\n'}
+[14.636626] (-) TimerEvent: {}
+[14.640161] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/turn.h\n'}
+[14.648757] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/environment/library_path.sh\n'}
+[14.659814] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/environment/library_path.dsv\n'}
+[14.667783] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[14.672967] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/move__rosidl_typesupport_introspection_c.h\n'}
+[14.679756] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/turn__rosidl_typesupport_introspection_c.h\n'}
+[14.687529] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/move__builder.hpp\n'}
+[14.693596] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/move__struct.hpp\n'}
+[14.699489] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/move__traits.hpp\n'}
+[14.704686] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/turn__builder.hpp\n'}
+[14.710409] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/turn__struct.hpp\n'}
+[14.718039] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/turn__traits.hpp\n'}
+[14.725679] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/move.hpp\n'}
+[14.730539] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/turn.hpp\n'}
+[14.736745] (-) TimerEvent: {}
+[14.737934] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/move__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.745038] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/include/usr_srvs/srv/detail/turn__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.751989] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/environment/pythonpath.sh\n'}
+[14.759765] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/environment/pythonpath.dsv\n'}
+[14.768089] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/lib/python3.8/site-packages/usr_srvs/__init__.py\n'}
+[14.775690] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/lib/python3.8/site-packages/usr_srvs/srv/__init__.py\n'}
+[14.781406] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/lib/python3.8/site-packages/usr_srvs/srv/_move.py\n'}
+[14.787281] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/lib/python3.8/site-packages/usr_srvs/srv/_turn.py\n'}
+[14.793959] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/lib/python3.8/site-packages/usr_srvs/usr_srvs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[14.800473] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/lib/python3.8/site-packages/usr_srvs/usr_srvs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[14.807855] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/lib/libusr_srvs__python.so\n'}
+[14.813525] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/srv/Move.idl\n'}
+[14.819456] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/srv/Turn.idl\n'}
+[14.825900] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/robot/Move.srv\n'}
+[14.831570] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/robot/Move_Request.msg\n'}
+[14.836900] (-) TimerEvent: {}
+[14.837865] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/robot/Move_Response.msg\n'}
+[14.845212] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/robot/Turn.srv\n'}
+[14.853929] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/robot/Turn_Request.msg\n'}
+[14.861461] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/robot/Turn_Response.msg\n'}
+[14.868781] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/ament_index/resource_index/package_run_dependencies/usr_srvs\n'}
+[14.876950] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/ament_index/resource_index/parent_prefix_path/usr_srvs\n'}
+[14.883994] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/environment/ament_prefix_path.sh\n'}
+[14.889989] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/environment/ament_prefix_path.dsv\n'}
+[14.896520] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/environment/path.sh\n'}
+[14.901860] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/environment/path.dsv\n'}
+[14.908168] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/local_setup.bash\n'}
+[14.913498] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/local_setup.sh\n'}
+[14.919717] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/local_setup.zsh\n'}
+[14.925872] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/local_setup.dsv\n'}
+[14.931043] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/package.dsv\n'}
+[14.935457] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/ament_index/resource_index/packages/usr_srvs\n'}
+[14.936990] (-) TimerEvent: {}
+[14.942061] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/rosidl_cmake-extras.cmake\n'}
+[14.948099] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.954207] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.960803] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.965561] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.970161] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[14.974240] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvsConfig.cmake\n'}
+[14.978249] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvsConfig-version.cmake\n'}
+[14.984245] (usr_srvs) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/package.xml\n'}
+[14.989397] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/lib/libusr_srvs__rosidl_generator_c.so\n'}
+[14.990382] (usr_srvs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/planner/ros2/install/usr_srvs/lib/libusr_srvs__rosidl_generator_c.so" to ""\n'}
+[14.991133] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/lib/libusr_srvs__rosidl_typesupport_introspection_c.so\n'}
+[14.991811] (usr_srvs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/planner/ros2/install/usr_srvs/lib/libusr_srvs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.992067] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/lib/libusr_srvs__rosidl_typesupport_c.so\n'}
+[14.992773] (usr_srvs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/planner/ros2/install/usr_srvs/lib/libusr_srvs__rosidl_typesupport_c.so" to ""\n'}
+[14.993025] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/lib/libusr_srvs__rosidl_typesupport_introspection_cpp.so\n'}
+[14.993804] (usr_srvs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/planner/ros2/install/usr_srvs/lib/libusr_srvs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[14.993990] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/lib/libusr_srvs__rosidl_typesupport_cpp.so\n'}
+[14.994331] (usr_srvs) StdoutLine: {'line': b'-- Set runtime path of "/workspace/planner/ros2/install/usr_srvs/lib/libusr_srvs__rosidl_typesupport_cpp.so" to ""\n'}
+[15.027699] (usr_srvs) StdoutLine: {'line': b"Compiling '/workspace/planner/ros2/install/usr_srvs/lib/python3.8/site-packages/usr_srvs/__init__.py'...\n"}
+[15.032937] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvs__rosidl_generator_cExport.cmake\n'}
+[15.033337] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvs__rosidl_generator_cExport-noconfig.cmake\n'}
+[15.034031] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[15.034379] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[15.034975] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvs__rosidl_typesupport_cExport.cmake\n'}
+[15.035404] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[15.035921] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvs__rosidl_generator_cppExport.cmake\n'}
+[15.036438] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[15.036733] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[15.037057] (-) TimerEvent: {}
+[15.037643] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvs__rosidl_typesupport_cppExport.cmake\n'}
+[15.038015] (usr_srvs) StdoutLine: {'line': b'-- Installing: /workspace/planner/ros2/install/usr_srvs/share/usr_srvs/cmake/usr_srvs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[15.041141] (usr_srvs) CommandEnded: {'returncode': 0}
+[15.083774] (interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable interfaces_node\x1b[0m\n'}
+[15.117969] (usr_srvs) JobEnded: {'identifier': 'usr_srvs', 'rc': 0}
+[15.137193] (-) TimerEvent: {}
+[15.237810] (-) TimerEvent: {}
+[15.338444] (-) TimerEvent: {}
+[15.439494] (-) TimerEvent: {}
+[15.521927] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces_node\n'}
+[15.529255] (interfaces) CommandEnded: {'returncode': 0}
+[15.539758] (-) TimerEvent: {}
+[15.561522] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'install'}
+[15.562036] (interfaces) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/workspace/planner/ros2/build/interfaces'], 'cwd': '/workspace/planner/ros2/build/interfaces', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CMAKE_SOURCE_DIR', '/cmake_build'), ('TURN_TIME', '2.0'), ('HOSTNAME', 'servicedesk1'), ('GIT_ASKPASS', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('RCUTILS_CONSOLE_OUTPUT_FORMAT', '[{severity}][{time}][{name}]: {message}'), ('LD_LIBRARY_PATH', '/workspace/planner/ros2/install/utils/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('BROWSER', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/helpers/browser.sh'), ('HOME', '/home/ada'), ('OLDPWD', '/workspace'), ('TERM_PROGRAM_VERSION', '1.64.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-1a67f052-528d-4aa9-b24f-7737408f6c94.sock'), ('ROS_PYTHON_VERSION', '3'), ('TURN_PRINT_WAYPOINT', '0'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'galactic'), ('BOT_INITIAL_YAW', '90'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-001ba014325240de5fe9c84bc736314851d042af.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('FORWARE_CRTL_POINTS', '100'), ('TERM', 'xterm-256color'), ('BOT_INITIAL_X', '917'), ('FORWARE_ACELERATION_FC', '0.3'), ('ROS_LOCALHOST_ONLY', '0'), ('BOT_INITIAL_Y', '1047'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/galactic/bin:/home/ada/.vscode-server/bin/f80445acd5a3dadef24aa209168452a3d97cc326/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock","/home/ada/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-49be5c6b2d.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-001ba014325240de5fe9c84bc736314851d042af.sock'), ('AMENT_PREFIX_PATH', '/workspace/planner/ros2/install/utils:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('OPENCV_VERSION', '4.4.0'), ('OPENCV_CONTRIB_VERSION', '4.4.0'), ('FORWARE_PRINT_WAYPOINT', '0'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('UDEV', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '1'), ('PWD', '/workspace/planner/ros2/build/interfaces'), ('LC_ALL', 'C.UTF-8'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('DELETE_BUILD', '0'), ('TURN_CRTL_POINTS', '50'), ('COLCON', '1'), ('TURN_ACELERATION_FC', '0.5'), ('CMAKE_PREFIX_PATH', '/workspace/planner/ros2/install/utils:/opt/ros/galactic')]), 'shell': False}
+[15.568254] (interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.569226] (interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.570009] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/lib/interfaces/interfaces_node\n'}
+[15.574391] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/include/modules//speaker.hpp\n'}
+[15.579586] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces\n'}
+[15.584177] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces\n'}
+[15.591956] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/environment/ament_prefix_path.sh\n'}
+[15.596342] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv\n'}
+[15.600129] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/environment/path.sh\n'}
+[15.603654] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/environment/path.dsv\n'}
+[15.608037] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/local_setup.bash\n'}
+[15.612477] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/local_setup.sh\n'}
+[15.616545] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/local_setup.zsh\n'}
+[15.620669] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/local_setup.dsv\n'}
+[15.624363] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/package.dsv\n'}
+[15.628251] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/ament_index/resource_index/packages/interfaces\n'}
+[15.632118] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.636609] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.639764] (-) TimerEvent: {}
+[15.640561] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake\n'}
+[15.645040] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake\n'}
+[15.651053] (interfaces) StdoutLine: {'line': b'-- Symlinking: /workspace/planner/ros2/install/interfaces/share/interfaces/package.xml\n'}
+[15.659413] (interfaces) CommandEnded: {'returncode': 0}
+[15.714806] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 0}
+[15.716482] (-) EventReactorShutdown: {}

@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from usr_msgs/msg/path_planner/Waypoint.msg
+// generated code does not contain a copyright notice
+
+
+module usr_msgs {
+  module msg {
+    struct Waypoint {
+      @verbatim (language="comment", text=
+        " id of waypoint")
+      int8 id;
+
+      @verbatim (language="comment", text=
+        " waypoint x axis")
+      int16 x;
+
+      @verbatim (language="comment", text=
+        " waypoint y axis")
+      int16 y;
+
+      @verbatim (language="comment", text=
+        " time of waypoint")
+      float t;
+
+      @verbatim (language="comment", text=
+        " delta of time of waypoint")
+      float dt;
+    };
+  };
+};

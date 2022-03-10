@@ -1,0 +1,17 @@
+[1.163s] Invoking command in '/workspace/planner/ros2/build/kiwibot': PYTHONPATH=/workspace/planner/ros2/install/kiwibot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /workspace/planner/ros2/install/kiwibot --editable --build-directory /workspace/planner/ros2/build/kiwibot/build --no-deps install_data --install-dir /workspace/planner/ros2/install/kiwibot
+[1.401s] running develop
+[1.499s] running egg_info
+[1.500s] writing kiwibot.egg-info/PKG-INFO
+[1.500s] writing dependency_links to kiwibot.egg-info/dependency_links.txt
+[1.501s] writing entry points to kiwibot.egg-info/entry_points.txt
+[1.501s] writing requirements to kiwibot.egg-info/requires.txt
+[1.502s] writing top-level names to kiwibot.egg-info/top_level.txt
+[1.534s] reading manifest file 'kiwibot.egg-info/SOURCES.txt'
+[1.536s] writing manifest file 'kiwibot.egg-info/SOURCES.txt'
+[1.538s] running build_ext
+[1.539s] Creating /workspace/planner/ros2/install/kiwibot/lib/python3.8/site-packages/kiwibot.egg-link (link to .)
+[1.542s] Installing kiwibot script to /workspace/planner/ros2/install/kiwibot/lib/kiwibot
+[1.542s] 
+[1.543s] Installed /workspace/planner/ros2/build/kiwibot
+[1.543s] running install_data
+[1.624s] Invoked command in '/workspace/planner/ros2/build/kiwibot' returned '0': PYTHONPATH=/workspace/planner/ros2/install/kiwibot/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /workspace/planner/ros2/install/kiwibot --editable --build-directory /workspace/planner/ros2/build/kiwibot/build --no-deps install_data --install-dir /workspace/planner/ros2/install/kiwibot

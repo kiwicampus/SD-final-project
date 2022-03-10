@@ -1,0 +1,131 @@
+[0.079s] Invoking command in '/workspace/planner/ros2/build/usr_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/local/bin/cmake --build /workspace/planner/ros2/build/usr_msgs -- -j12 -l12
+[1.204s] [  2%] Built target usr_msgs__cpp
+[1.205s] [ 17%] Built target usr_msgs__rosidl_generator_c
+[1.206s] [ 46%] Built target usr_msgs__rosidl_typesupport_introspection_cpp
+[1.206s] [ 46%] Built target usr_msgs__rosidl_typesupport_introspection_c
+[1.207s] [ 72%] Built target usr_msgs__rosidl_typesupport_c
+[1.207s] [ 76%] Built target usr_msgs__rosidl_typesupport_cpp
+[1.208s] [ 76%] Built target usr_msgs
+[1.210s] [ 78%] Built target usr_msgs__py
+[1.210s] [ 91%] Built target usr_msgs__python
+[1.211s] [ 95%] Built target usr_msgs__rosidl_typesupport_introspection_c__pyext
+[1.212s] [100%] Built target usr_msgs__rosidl_typesupport_c__pyext
+[1.214s] Invoked command in '/workspace/planner/ros2/build/usr_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/local/bin/cmake --build /workspace/planner/ros2/build/usr_msgs -- -j12 -l12
+[1.291s] Invoking command in '/workspace/planner/ros2/build/usr_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/local/bin/cmake --install /workspace/planner/ros2/build/usr_msgs
+[1.295s] -- Install configuration: ""
+[1.297s] -- Execute custom install script
+[1.299s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/ament_index/resource_index/rosidl_interfaces/usr_msgs
+[1.300s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__functions.h
+[1.300s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__struct.h
+[1.301s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__type_support.h
+[1.302s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__functions.h
+[1.303s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__struct.h
+[1.305s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__type_support.h
+[1.306s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__functions.h
+[1.306s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__struct.h
+[1.306s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__type_support.h
+[1.306s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__functions.h
+[1.307s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__struct.h
+[1.307s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__type_support.h
+[1.307s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__functions.h
+[1.307s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__struct.h
+[1.307s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__type_support.h
+[1.308s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/kiwibot.h
+[1.308s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/land_mark.h
+[1.308s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/planner.h
+[1.308s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.309s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/turn_ref.h
+[1.309s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/waypoint.h
+[1.309s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/library_path.sh
+[1.310s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/library_path.dsv
+[1.311s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__rosidl_typesupport_introspection_c.h
+[1.312s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__rosidl_typesupport_introspection_c.h
+[1.312s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__rosidl_typesupport_introspection_c.h
+[1.312s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__rosidl_typesupport_introspection_c.h
+[1.313s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__rosidl_typesupport_introspection_c.h
+[1.313s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.314s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__builder.hpp
+[1.314s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__struct.hpp
+[1.314s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__traits.hpp
+[1.315s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__builder.hpp
+[1.317s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__struct.hpp
+[1.318s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__traits.hpp
+[1.318s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__builder.hpp
+[1.318s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__struct.hpp
+[1.318s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__traits.hpp
+[1.318s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__builder.hpp
+[1.318s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__struct.hpp
+[1.318s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__traits.hpp
+[1.319s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__builder.hpp
+[1.319s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__struct.hpp
+[1.319s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__traits.hpp
+[1.319s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/kiwibot.hpp
+[1.320s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/land_mark.hpp
+[1.320s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/planner.hpp
+[1.320s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/turn_ref.hpp
+[1.324s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/waypoint.hpp
+[1.324s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__rosidl_typesupport_introspection_cpp.hpp
+[1.325s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__rosidl_typesupport_introspection_cpp.hpp
+[1.326s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__rosidl_typesupport_introspection_cpp.hpp
+[1.326s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__rosidl_typesupport_introspection_cpp.hpp
+[1.326s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__rosidl_typesupport_introspection_cpp.hpp
+[1.326s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/pythonpath.sh
+[1.326s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/pythonpath.dsv
+[1.326s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/__init__.py
+[1.327s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/__init__.py
+[1.327s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_kiwibot.py
+[1.328s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_land_mark.py
+[1.329s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_planner.py
+[1.329s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_turn_ref.py
+[1.329s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_waypoint.py
+[1.339s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/usr_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[1.340s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/usr_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[1.340s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__python.so
+[1.340s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/Planner.idl
+[1.340s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/LandMark.idl
+[1.340s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/Waypoint.idl
+[1.340s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/TurnRef.idl
+[1.340s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/Kiwibot.idl
+[1.340s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/path_planner/Planner.msg
+[1.340s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/path_planner/LandMark.msg
+[1.340s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/path_planner/Waypoint.msg
+[1.341s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/path_planner/TurnRef.msg
+[1.341s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/bot_status/Kiwibot.msg
+[1.341s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/ament_index/resource_index/package_run_dependencies/usr_msgs
+[1.342s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/ament_index/resource_index/parent_prefix_path/usr_msgs
+[1.343s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/ament_prefix_path.sh
+[1.343s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/ament_prefix_path.dsv
+[1.344s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/path.sh
+[1.344s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/path.dsv
+[1.345s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/local_setup.bash
+[1.346s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/local_setup.sh
+[1.346s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/local_setup.zsh
+[1.347s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/local_setup.dsv
+[1.347s] -- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/package.dsv
+[1.353s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/ament_index/resource_index/packages/usr_msgs
+[1.354s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/rosidl_cmake-extras.cmake
+[1.354s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.355s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.355s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.356s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.357s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.358s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgsConfig.cmake
+[1.359s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgsConfig-version.cmake
+[1.359s] -- Up-to-date symlink: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/package.xml
+[1.359s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_generator_c.so
+[1.360s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_introspection_c.so
+[1.361s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_c.so
+[1.362s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_introspection_cpp.so
+[1.362s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_cpp.so
+[1.414s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_generator_cExport.cmake
+[1.415s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.415s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.415s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.415s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_cExport.cmake
+[1.415s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.416s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_generator_cppExport.cmake
+[1.416s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.416s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.416s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_cppExport.cmake
+[1.417s] -- Up-to-date: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.420s] Invoked command in '/workspace/planner/ros2/build/usr_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/local/bin/cmake --install /workspace/planner/ros2/build/usr_msgs

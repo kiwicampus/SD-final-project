@@ -1,0 +1,72 @@
+[0.061s] Invoking command in '/workspace/planner/ros2/build/utils': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/local/bin/cmake /workspace/planner/ros2/src/utils -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/planner/ros2/install/utils
+[0.785s] -- The C compiler identification is GNU 9.4.0
+[0.786s] -- The CXX compiler identification is GNU 9.4.0
+[0.787s] -- Check for working C compiler: /usr/bin/cc
+[0.787s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.787s] -- Detecting C compiler ABI info
+[0.787s] -- Detecting C compiler ABI info - done
+[0.788s] -- Detecting C compile features
+[0.788s] -- Detecting C compile features - done
+[0.788s] -- Check for working CXX compiler: /usr/bin/c++
+[0.790s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.790s] -- Detecting CXX compiler ABI info
+[0.790s] -- Detecting CXX compiler ABI info - done
+[0.818s] -- Detecting CXX compile features
+[0.822s] -- Detecting CXX compile features - done
+[0.826s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.859s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.859s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.947s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.001s] -- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.140s] -- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+[1.161s] -- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.253s] -- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+[1.515s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.522s] -- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.634s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.641s] -- Looking for pthread.h
+[1.752s] -- Looking for pthread.h - found
+[1.754s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.830s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.830s] -- Looking for pthread_create in pthreads
+[1.892s] -- Looking for pthread_create in pthreads - not found
+[1.893s] -- Looking for pthread_create in pthread
+[1.961s] -- Looking for pthread_create in pthread - found
+[1.965s] -- Found Threads: TRUE  
+[2.525s] -- Configuring done
+[2.571s] -- Generating done
+[2.574s] -- Build files have been written to: /workspace/planner/ros2/build/utils
+[2.579s] Invoked command in '/workspace/planner/ros2/build/utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/local/bin/cmake /workspace/planner/ros2/src/utils -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/planner/ros2/install/utils
+[2.582s] Invoking command in '/workspace/planner/ros2/build/utils': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/local/bin/cmake --build /workspace/planner/ros2/build/utils -- -j12 -l12
+[2.612s] [35m[1mScanning dependencies of target utils[0m
+[2.620s] [ 50%] [32mBuilding CXX object CMakeFiles/utils.dir/lib/console.cpp.o[0m
+[3.004s] [100%] [32m[1mLinking CXX static library libutils.a[0m
+[3.022s] [100%] Built target utils
+[3.027s] Invoked command in '/workspace/planner/ros2/build/utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/local/bin/cmake --build /workspace/planner/ros2/build/utils -- -j12 -l12
+[3.051s] Invoking command in '/workspace/planner/ros2/build/utils': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/local/bin/cmake --install /workspace/planner/ros2/build/utils
+[3.055s] -- Install configuration: ""
+[3.057s] -- Execute custom install script
+[3.058s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/environment/library_path.sh
+[3.062s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/environment/library_path.dsv
+[3.066s] -- Symlinking: /workspace/planner/ros2/install/utils/include/utils//console.hpp
+[3.070s] -- Symlinking: /workspace/planner/ros2/install/utils/share/ament_index/resource_index/package_run_dependencies/utils
+[3.074s] -- Symlinking: /workspace/planner/ros2/install/utils/share/ament_index/resource_index/parent_prefix_path/utils
+[3.079s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/environment/ament_prefix_path.sh
+[3.082s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/environment/ament_prefix_path.dsv
+[3.086s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/environment/path.sh
+[3.090s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/environment/path.dsv
+[3.095s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/local_setup.bash
+[3.101s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/local_setup.sh
+[3.105s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/local_setup.zsh
+[3.111s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/local_setup.dsv
+[3.115s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/package.dsv
+[3.119s] -- Symlinking: /workspace/planner/ros2/install/utils/share/ament_index/resource_index/packages/utils
+[3.123s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.127s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/cmake/ament_cmake_export_targets-extras.cmake
+[3.131s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/cmake/utilsConfig.cmake
+[3.135s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/cmake/utilsConfig-version.cmake
+[3.139s] -- Symlinking: /workspace/planner/ros2/install/utils/share/utils/package.xml
+[3.143s] -- Installing: /workspace/planner/ros2/install/utils/lib/libutils.a
+[3.143s] -- Installing: /workspace/planner/ros2/install/utils/share/utils/cmake/export_utilsExport.cmake
+[3.143s] -- Installing: /workspace/planner/ros2/install/utils/share/utils/cmake/export_utilsExport-noconfig.cmake
+[3.146s] Invoked command in '/workspace/planner/ros2/build/utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/local/bin/cmake --install /workspace/planner/ros2/build/utils

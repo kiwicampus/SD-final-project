@@ -1,0 +1,243 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 9.2.0 (/opt/ros/galactic/share/rclcpp/cmake)
+-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.1 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.4 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+-- Found ament_lint_auto: 0.10.6 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+-- Found PythonExtra: .so  
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/planner/ros2/build/usr_msgs
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[35m[1mScanning dependencies of target usr_msgs__cpp[0m
+[  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[35m[1mScanning dependencies of target usr_msgs__rosidl_generator_c[0m
+[  4%] Built target usr_msgs__cpp
+[ 12%] [32mBuilding C object CMakeFiles/usr_msgs__rosidl_generator_c.dir/rosidl_generator_c/usr_msgs/msg/detail/turn_ref__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/usr_msgs__rosidl_generator_c.dir/rosidl_generator_c/usr_msgs/msg/detail/land_mark__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/usr_msgs__rosidl_generator_c.dir/rosidl_generator_c/usr_msgs/msg/detail/planner__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/usr_msgs__rosidl_generator_c.dir/rosidl_generator_c/usr_msgs/msg/detail/waypoint__functions.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/usr_msgs__rosidl_generator_c.dir/rosidl_generator_c/usr_msgs/msg/detail/kiwibot__functions.c.o[0m
+[ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 19%] [32m[1mLinking C shared library libusr_msgs__rosidl_generator_c.so[0m
+[ 19%] Built target usr_msgs__rosidl_generator_c
+[ 21%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[35m[1mScanning dependencies of target usr_msgs__rosidl_typesupport_introspection_cpp[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usr_msgs/msg/detail/kiwibot__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usr_msgs/msg/detail/planner__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usr_msgs/msg/detail/land_mark__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usr_msgs/msg/detail/turn_ref__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usr_msgs/msg/detail/waypoint__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target usr_msgs__rosidl_typesupport_introspection_c[0m
+[ 40%] [32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usr_msgs/msg/detail/planner__type_support.c.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usr_msgs/msg/detail/turn_ref__type_support.c.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usr_msgs/msg/detail/waypoint__type_support.c.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usr_msgs/msg/detail/land_mark__type_support.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usr_msgs/msg/detail/kiwibot__type_support.c.o[0m
+[ 44%] [32m[1mLinking C shared library libusr_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 44%] Built target usr_msgs__rosidl_typesupport_introspection_c
+[ 46%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 48%] [32m[1mLinking CXX shared library libusr_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 48%] Built target usr_msgs__rosidl_typesupport_introspection_cpp
+[ 51%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[35m[1mScanning dependencies of target usr_msgs__rosidl_typesupport_c[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/usr_msgs/msg/planner__type_support.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/usr_msgs/msg/land_mark__type_support.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/usr_msgs/msg/waypoint__type_support.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/usr_msgs/msg/kiwibot__type_support.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/usr_msgs/msg/turn_ref__type_support.cpp.o[0m
+[ 63%] [32m[1mLinking CXX shared library libusr_msgs__rosidl_typesupport_c.so[0m
+[ 63%] Built target usr_msgs__rosidl_typesupport_c
+[35m[1mScanning dependencies of target usr_msgs__rosidl_typesupport_cpp[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usr_msgs/msg/waypoint__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usr_msgs/msg/planner__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usr_msgs/msg/land_mark__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usr_msgs/msg/kiwibot__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/usr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usr_msgs/msg/turn_ref__type_support.cpp.o[0m
+[ 76%] [32m[1mLinking CXX shared library libusr_msgs__rosidl_typesupport_cpp.so[0m
+[ 76%] Built target usr_msgs__rosidl_typesupport_cpp
+[35m[1mScanning dependencies of target usr_msgs[0m
+[ 76%] Built target usr_msgs
+[35m[1mScanning dependencies of target usr_msgs__py[0m
+[ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 78%] Built target usr_msgs__py
+[35m[1mScanning dependencies of target usr_msgs__python[0m
+[ 82%] [32mBuilding C object CMakeFiles/usr_msgs__python.dir/rosidl_generator_py/usr_msgs/msg/_land_mark_s.c.o[0m
+[ 82%] [32mBuilding C object CMakeFiles/usr_msgs__python.dir/rosidl_generator_py/usr_msgs/msg/_planner_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/usr_msgs__python.dir/rosidl_generator_py/usr_msgs/msg/_waypoint_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/usr_msgs__python.dir/rosidl_generator_py/usr_msgs/msg/_kiwibot_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/usr_msgs__python.dir/rosidl_generator_py/usr_msgs/msg/_turn_ref_s.c.o[0m
+[ 91%] [32m[1mLinking C shared library rosidl_generator_py/usr_msgs/libusr_msgs__python.so[0m
+[ 91%] Built target usr_msgs__python
+[35m[1mScanning dependencies of target usr_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mScanning dependencies of target usr_msgs__rosidl_typesupport_c__pyext[0m
+[ 95%] [32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/usr_msgs/_usr_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/usr_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/usr_msgs/_usr_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/usr_msgs/usr_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[ 97%] Built target usr_msgs__rosidl_typesupport_c__pyext
+[100%] [32m[1mLinking C shared library rosidl_generator_py/usr_msgs/usr_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[100%] Built target usr_msgs__rosidl_typesupport_introspection_c__pyext
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/ament_index/resource_index/rosidl_interfaces/usr_msgs
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__functions.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__struct.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__type_support.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__functions.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__struct.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__type_support.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__functions.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__struct.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__type_support.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__functions.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__struct.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__type_support.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__functions.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__struct.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__type_support.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/kiwibot.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/land_mark.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/planner.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/turn_ref.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/waypoint.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/library_path.sh
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/library_path.dsv
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__rosidl_typesupport_introspection_c.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__rosidl_typesupport_introspection_c.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__rosidl_typesupport_introspection_c.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__rosidl_typesupport_introspection_c.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__rosidl_typesupport_introspection_c.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__builder.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__struct.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__traits.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__builder.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__struct.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__traits.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__builder.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__struct.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__traits.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__builder.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__struct.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__traits.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__builder.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__struct.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__traits.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/kiwibot.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/land_mark.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/planner.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/turn_ref.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/waypoint.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/kiwibot__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/land_mark__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/planner__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/turn_ref__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/include/usr_msgs/msg/detail/waypoint__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/pythonpath.sh
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/pythonpath.dsv
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/__init__.py
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/__init__.py
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_kiwibot.py
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_land_mark.py
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_planner.py
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_turn_ref.py
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/msg/_waypoint.py
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/usr_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/usr_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__python.so
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/Planner.idl
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/LandMark.idl
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/Waypoint.idl
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/TurnRef.idl
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/msg/Kiwibot.idl
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/path_planner/Planner.msg
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/path_planner/LandMark.msg
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/path_planner/Waypoint.msg
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/path_planner/TurnRef.msg
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/bot_status/Kiwibot.msg
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/ament_index/resource_index/package_run_dependencies/usr_msgs
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/ament_index/resource_index/parent_prefix_path/usr_msgs
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/ament_prefix_path.sh
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/ament_prefix_path.dsv
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/path.sh
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/environment/path.dsv
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/local_setup.bash
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/local_setup.sh
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/local_setup.zsh
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/local_setup.dsv
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/package.dsv
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/ament_index/resource_index/packages/usr_msgs
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgsConfig.cmake
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgsConfig-version.cmake
+-- Symlinking: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/package.xml
+-- Installing: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_generator_c.so
+-- Set runtime path of "/workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_generator_c.so" to ""
+-- Installing: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_c.so
+-- Set runtime path of "/workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_c.so" to ""
+-- Installing: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_cpp.so
+-- Set runtime path of "/workspace/planner/ros2/install/usr_msgs/lib/libusr_msgs__rosidl_typesupport_cpp.so" to ""
+Compiling '/workspace/planner/ros2/install/usr_msgs/lib/python3.8/site-packages/usr_msgs/__init__.py'...
+-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_generator_cExport.cmake
+-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_cExport.cmake
+-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_generator_cppExport.cmake
+-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_cppExport.cmake
+-- Installing: /workspace/planner/ros2/install/usr_msgs/share/usr_msgs/cmake/usr_msgs__rosidl_typesupport_cppExport-noconfig.cmake

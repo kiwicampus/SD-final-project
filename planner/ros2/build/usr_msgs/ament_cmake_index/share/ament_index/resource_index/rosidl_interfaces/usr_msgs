@@ -1,0 +1,10 @@
+bot_status/Kiwibot.msg
+msg/Kiwibot.idl
+msg/LandMark.idl
+msg/Planner.idl
+msg/TurnRef.idl
+msg/Waypoint.idl
+path_planner/LandMark.msg
+path_planner/Planner.msg
+path_planner/TurnRef.msg
+path_planner/Waypoint.msg
