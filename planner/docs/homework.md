@@ -138,7 +138,7 @@ For extra homework we recommend you create a new branch from the developed one w
 
 5. **[+10%/5.0]**: Implement a method or way to stop the routine (with a key).
 
-6. **[+20%/5.0]**: Update the data from the gsheet every time the routine es paused or the robot reach a waypoint with the percent data form the point 4. You must update the row of the current routine, not create a new row.
+6. **[+20%/5.0]**: Update the data from the gsheet every time the routine is paused or the robot reach a waypoint with the percent data form the point 4. You must update the row of the current routine, not create a new row.
 
 7. **[+10%/5.0]:** Here you could add a new "completed" column, and define it as 1 -> completed routines or 0 -> uncompleted routines.
 
