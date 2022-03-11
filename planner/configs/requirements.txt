@@ -1,0 +1,7 @@
+# --------------------------------
+# Python pip packages to install
+# To install a specific package version
+# type "package_name==0.1.8"
+numpy
+testresources
+setuptools

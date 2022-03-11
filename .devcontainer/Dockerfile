@@ -32,7 +32,7 @@ RUN apt-get update && apt-get install -y \
     software-properties-common \
     tar \
     wget \ 
-	cmake \
+    cmake \
     # Install Docker CE CLI
     && curl -fsSL https://download.docker.com/linux/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/gpg | (OUT=$(apt-key add - 2>&1) || echo $OUT) \
     && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/$(lsb_release -is | tr '[:upper:]' '[:lower:]') $(lsb_release -cs) stable" \
@@ -134,12 +134,12 @@ RUN apt update && apt install --no-install-recommends -y \
     gfortran \
     # ------------------------------
     # pip dependencies
-    &&  python3 -m pip install  \
-    numpy \
-    testresources \
-    setuptools \
     # ------------------------------
     && rm -rf /var/lib/apt/lists/*
+
+# Install Python packages
+COPY --chown=${USER_UID}:${USER_GID} planner/configs/requirements.txt . 
+RUN pip install -r requirements.txt
 
 RUN  \
     # ------------------------------
