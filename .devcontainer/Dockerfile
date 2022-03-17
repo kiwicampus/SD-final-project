@@ -133,8 +133,6 @@ RUN apt update && apt install --no-install-recommends -y \
     libatlas-base-dev \
     gfortran \
     # ------------------------------
-    # pip dependencies
-    # ------------------------------
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python packages
@@ -260,9 +258,6 @@ ENV RCUTILS_LOGGING_USE_STDOUT=1
 ENV RCUTILS_LOGGING_BUFFERED_STREAM=1   
 
 # -----------------------------------------------------------------------------
-# Add Python dependencies in here
-RUN pip3 install -U pip \
-    black~=20.8b
 
 RUN \
     apt update && apt install -y \ 
