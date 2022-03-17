@@ -1,8 +1,0 @@
-Invoking command in '/workspace/planner/ros2/build/utils': CMAKE_PREFIX_PATH=/opt/ros/galactic XAUTHORITY=/home/ada/.Xauthority
-export XAUTHORITY=/home/ada/.Xauthority /usr/local/bin/cmake --build /workspace/planner/ros2/build/utils -- -j12 -l12
-Invoked command in '/workspace/planner/ros2/build/utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic XAUTHORITY=/home/ada/.Xauthority
-export XAUTHORITY=/home/ada/.Xauthority /usr/local/bin/cmake --build /workspace/planner/ros2/build/utils -- -j12 -l12
-Invoking command in '/workspace/planner/ros2/build/utils': CMAKE_PREFIX_PATH=/opt/ros/galactic XAUTHORITY=/home/ada/.Xauthority
-export XAUTHORITY=/home/ada/.Xauthority /usr/local/bin/cmake --install /workspace/planner/ros2/build/utils
-Invoked command in '/workspace/planner/ros2/build/utils' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic XAUTHORITY=/home/ada/.Xauthority
-export XAUTHORITY=/home/ada/.Xauthority /usr/local/bin/cmake --install /workspace/planner/ros2/build/utils

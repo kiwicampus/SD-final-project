@@ -1,1 +1,0 @@
-/workspace/planner/ros2/src/usr_msgs/msg/path_planner/Planner.msg

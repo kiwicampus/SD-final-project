@@ -1,1 +1,0 @@
-/workspace/planner/ros2/src/usr_msgs/msg/bot_status/Kiwibot.msg

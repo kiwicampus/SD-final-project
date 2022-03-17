@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/workspace/planner/ros2/build/usr_srvs/rosidl_generator_py/usr_srvs/usr_srvs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" "TARGETS" "usr_srvs__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.8/site-packages/usr_srvs")

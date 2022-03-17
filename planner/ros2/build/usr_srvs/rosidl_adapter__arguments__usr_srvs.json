@@ -1,7 +1,0 @@
-{
-  "package_name": "usr_srvs",
-  "non_idl_tuples": [
-    "/workspace/planner/ros2/src/usr_srvs:srv/robot/Move.srv",
-    "/workspace/planner/ros2/src/usr_srvs:srv/robot/Turn.srv"
-  ]
-}

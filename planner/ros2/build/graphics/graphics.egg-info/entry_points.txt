@@ -1,3 +1,0 @@
-[console_scripts]
-graphics = graphics.node_visual_gui:main
-

@@ -1,4 +1,0 @@
-Invoking command in '/workspace/planner/ros2/build/kiwibot': PYTHONPATH=/workspace/planner/ros2/install/kiwibot/lib/python3.8/site-packages:${PYTHONPATH} XAUTHORITY=/home/ada/.Xauthority
-export XAUTHORITY=/home/ada/.Xauthority /usr/bin/python3 setup.py develop --prefix /workspace/planner/ros2/install/kiwibot --editable --build-directory /workspace/planner/ros2/build/kiwibot/build --no-deps install_data --install-dir /workspace/planner/ros2/install/kiwibot
-Invoked command in '/workspace/planner/ros2/build/kiwibot' returned '0': PYTHONPATH=/workspace/planner/ros2/install/kiwibot/lib/python3.8/site-packages:${PYTHONPATH} XAUTHORITY=/home/ada/.Xauthority
-export XAUTHORITY=/home/ada/.Xauthority /usr/bin/python3 setup.py develop --prefix /workspace/planner/ros2/install/kiwibot --editable --build-directory /workspace/planner/ros2/build/kiwibot/build --no-deps install_data --install-dir /workspace/planner/ros2/install/kiwibot

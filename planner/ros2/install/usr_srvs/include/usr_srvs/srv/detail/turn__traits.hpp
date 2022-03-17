@@ -1,1 +1,0 @@
-/workspace/planner/ros2/build/usr_srvs/rosidl_generator_cpp/usr_srvs/srv/detail/turn__traits.hpp

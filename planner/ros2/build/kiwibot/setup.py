@@ -1,1 +1,0 @@
-/workspace/planner/ros2/src/kiwibot/setup.py

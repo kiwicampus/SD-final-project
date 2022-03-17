@@ -1,1 +1,0 @@
-/workspace/planner/ros2/build/usr_msgs/ament_cmake_core/usr_msgsConfig-version.cmake

@@ -1,8 +1,0 @@
-robot/Move.srv
-robot/Move_Request.msg
-robot/Move_Response.msg
-robot/Turn.srv
-robot/Turn_Request.msg
-robot/Turn_Response.msg
-srv/Move.idl
-srv/Turn.idl

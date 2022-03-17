@@ -1,1 +1,0 @@
-/workspace/planner/ros2/build/utils/ament_cmake_environment_hooks/local_setup.zsh
