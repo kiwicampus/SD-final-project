@@ -35,7 +35,7 @@ If you can not get this window it could be that the code you are making is broke
 
 ### *Python*
 
-If you complete python points you'll have the robot moving in the map without sound.
+If you complete python points you'll have the robot moving in the map.
 
 1. **Implement/Create the path planner status subscriber** - package: [`graphics`](https://github.com/kiwicampus/2D-Test-Track-Service-Desk-Project/tree/main/planner/ROS2/src/graphics), Node: [`node_visual_gui.py`](https://github.com/kiwicampus/2D-Test-Track-Service-Desk-Project/tree/main/planner/ROS2/src/graphics/graphics/node_visual_gui.py) -> Implement/Create in the node constructor a subscriber for the bot status, the topic name should be `/path_planner/msg` message type `planner_msg`, callback `cb_path_planner`.
 
@@ -57,24 +57,28 @@ If you finish successfully all the points, you must have a window like this (wit
 
 ### *Information Management* 
 
-For the second part of the basics we want to assess the use of API's and information management, as well as written communication, problem solving, reporting skills and learn new technologies quickly and effectively, you can make use of online tutorials to guide you, however you will do it when you are working :)
+For the second part of the basics we want to assess the use of API's and information management, as well as written communication, problem solving, reporting skills and learn new technologies quickly and effectively, you can make use of online tutorials to guide you, anyway you will be doing it while you work with us :)
 
-1. **Generate GCP credentials:** If you don't have an account generate one, you don't need to have billing activated, it will only be used in a basic way, the credentials can be saved anywhere you want.
+In this part you will need to install new libraries or dependencies. Be careful, there are many ways you could install a simple package, but we hope you do it in an elegant and containerized way.
+
+1. **Generate [GCP](https://cloud.google.com/https://cloud.google.com/) credentials:** If you don't have an account generate one. You don't need to have billing activated, it will only be used in a basic way. The credentials can be saved anywhere you want (BE CAREFUL, DO NOT COMMIT OR PUSH YOUR CREDENTIALS).
 
 2. **Authenticate credentials:** You must analyze the stack and decide in which scripts you must authenticate the credentials to be able to use the API later, keep in mind that the place you choose is because you want to get/upload information to google sheets. We use the following library: https://google-auth.readthedocs.io/en/master/
 
-3. **Upload information to google sheet:** You must add a piece of code where you think it should go (be careful not to break anything), this code must add a new line in a google sheet every time a routine is started, the following information must be loaded: incremental id for the gsheet (different than routine id, date, time, routine id, total distance, total time. We use the following library: https://docs.gspread.org/en/latest/
+3. **Upload information to google sheet:** You must add a piece of code where you think it should go (be careful not to break anything), this code must add a new line in a google sheet every time a routine is started, the following information must be loaded: 
 
-4. **Make a report:** You should make a report explaining briefly what you did, the resources you used and all the necessary information you think we need to verify the result, it should not be a line by line explanation of what you did, just a description of the result, what you used and how we can access the information you saved. You can use any means and in the most assertive way to show it, just keep in mind that you must provide us with a way to see it for us.
+```id (different than routine_id), date, time, routine_id, total_distance, total_time ```
 
-*Note: The libraries you include to run them must be containerized so that we can test your solution.*
+We use the following library: https://docs.gspread.org/en/latest/
+
+4. **Make a report:** You should make a report explaining briefly what you did, the resources you used and all the necessary information you think we need to verify the result. It should not be a line by line explanation of what you did, just a description of the result, what you used and how we can access the information you saved. You can use any means and in the most assertive way to show it, just keep in mind that you must provide us with a way to see it for us.
 
 ---
 **REMEMBER**: 
 1. Once more again, No partial solution will be accepted, you have to complete all the basic points and the questionary to submit your solution to a review.
 2. if you push just one minute after the time given by email we won't review your project solution (at least, that commit).
 3. if you find an error in the code, bug, drawback, and there's no already an issue created in the main repository, please create it and you win extra points (+3%/5: **this is 3% more over 5.0, which is equal to 0.15 in the final project's grade**), we'll try to give a solution ASAP.
-4. You have 3 questions that can be done as an issue in the main repository, so please check that what you are asking for is not already answered in the issues section (don't waste your questions).
+4. You have 5 questions that can be done as an issue in the main repository, so please check that what you are asking for is not already answered in the issues section (don't waste your questions).
 5. It's forbidden talk with other project participants, if we think that you made tramp or you cheated, your project and the others (if apply) won't be reviewed and your application will be canceled.
 6. We'll push the solution when the application job closes, we'll notify all participants of this by email.
 7. What we are evaluating is:
@@ -88,9 +92,8 @@ For the second part of the basics we want to assess the use of API's and informa
     * **[30%/5]** Cultural feed Interview
     * **[30%/5]** Pair programming Interview
     * **[40%/5]** Final Project
-10. We'll select the 3 best candidates by their grades, and we'll make the final decision with the Ai&Team.
-11. We are evaluating your concepts and knowledge in ROS2, Python, API's, Some basic control concepts, other Code stuff.
-12. If no participant send the project before the dead line time, we will extend the deadline date and time, for everyone, with just person that complete the questionary and the basic-points the rest are doomed, but also if we considered that the solutions received are not enough or not well explained we also can extend the deadline, but we are pretty sure that this wont happened.
+10. We are evaluating your concepts and knowledge in ROS2, Python, API's, Some basic control concepts, other Code stuff.
+11. If no participant send the project before the dead line time, we will extend the deadline date and time, for everyone, with just person that complete the questionary and the basic-points the rest are doomed, but also if we considered that the solutions received are not enough or not well explained we also can extend the deadline, but we are pretty sure that this wont happened.
 
 ---
 <!-- ---------------------------------------------------------------------- -->
@@ -118,7 +121,7 @@ Respond below every questions:
 
 9. [Docker] Can we change the basic image (`FROM ubuntu:20.04`) from the docker file to another?
 
-10. [General] Why is it not a good idea to upload the api credentials to github and why if they are already uploaded is it not a good idea to simply delete them?
+10. [General] Why is it not a good idea to upload the API credentials to github and why if they are already uploaded is it not a good idea to simply delete them from your repo?
 
 
 Next questions is after you finish the project, it doesn't give points but we really appreciate you feedback:
@@ -131,20 +134,21 @@ Next questions is after you finish the project, it doesn't give points but we re
 For extra homework we recommend you create a new branch from the developed one when you finish the basic points of the homework, you can name this new branch as *feature/extra_homework*, don't forget to push it before the time that it was given. For this you can create new files, modules and organize them as you wish.
 
 1. **[+5%/5.0]**: Modify the docker file to source ROS2 and have autocompleted commands like ```ros2 topic list```.
-2. **[+5%/5.0]**: Have the data downloaded from the gsheet and saved in a .csv file each time the container is opened.
-3. **[+5%/5.0]**: Make that the Kiwibot image doesn't get distorted when is turning.
-4. **[+10%/5.0]**: In the GUI, there's an empty field with the `Porc:???%` value. Find a way to print there the % of the total distance of the routine that the robot has traveled.
+2. **[+5%/5.0]**: Make that the Kiwibot image doesn't get distorted when is turning.
+3. **[+10%/5.0]**: In the GUI, there's an empty field with the `Porc:???%` value. Find a way to print there the % of the total distance of the routine that the robot has traveled.
 <img height="300" src="https://user-images.githubusercontent.com/38380745/143324697-a06fb3ae-de62-4d42-8373-0da62e68a314.png">
 
-5. **[+10%/5.0]**: Implement a method or way to stop the routine (with a key).
+4. **[+10%/5.0]**: Implement a method or way to stop the routine (with a key).
 
-6. **[+20%/5.0]**: Update the data from the gsheet every time the routine is paused or the robot reach a waypoint with the percent data form the point 4. You must update the row of the current routine, not create a new row.
+5. **[+10%/5.0]**: Have the full data downloaded from the gsheet and saved in a .csv file each time the container is opened.
 
-7. **[+10%/5.0]:** Here you could add a new "completed" column, and define it as 1 -> completed routines or 0 -> uncompleted routines.
+6. **[+20%/5.0]**: Update the data from the gsheet every time the routine is paused or the robot reach a waypoint with the percent data form the point 4 (create a new column for this field). You must update the row of the current routine, not create a new row.
+
+7. **[+15%/5.0]:** Here you could add a new "completed" column, and define it as 1 -> completed routines or 0 -> uncompleted routines.
 
 8. **[+10%/5.0]**: Filter the information in the google sheet table by routine and generate a chart with the total distance traveled.
 
-9. **[+15%/5.0]**: Add the previous chart the option to show the completed and uncompleted routines.
+9. **[+10%/5.0]**: Add the previous chart the option to show the completed and uncompleted routines.
 
 10. **[+5%/5.0]**: (Question) What happens if we change some element of the google sheets sheet for example: file name, time name, sheet position, etc?
 
