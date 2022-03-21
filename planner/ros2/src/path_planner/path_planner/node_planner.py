@@ -462,8 +462,8 @@ class PlannerNode(Node):
                 {
                     "idx": [int](index of the waypoint),
                     "pt": [tuple][int](x and y axis positions in the image space),
-                    "t": [float](time for angle a),
-                    "dt": [float](sept of time for angle a, is constant element)
+                    "t": [float](time for position pt(X,Y)),
+                    "dt": [float](sept of time for position pt(X,Y), is constant element)
                 }
         """
 
@@ -475,8 +475,8 @@ class PlannerNode(Node):
         # where every element in has the next structure and data type:
         # "idx": [int](index of the waypoint),
         # "pt": [tuple][int](x and y axis positions in the image space),
-        # "t": [float](time for angle a),
-        # "dt": [float](sept of time for angle a, is constant element)
+        # "t": [float](time for position pt(X,Y)),
+        # "dt": [float](sept of time for position pt(X,Y), is constant element)
         # Do not forget and respect the keys names
 
         # ---------------------------------------------------------------------
