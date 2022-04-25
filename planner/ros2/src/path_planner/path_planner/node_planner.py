@@ -475,9 +475,66 @@ class PlannerNode(Node):
         # where every element in has the next structure and data type:
         # "idx": [int](index of the waypoint),
         # "pt": [tuple][int](x and y axis positions in the image space),
-        # "t": [float](time for position pt(X,Y)),
-        # "dt": [float](sept of time for position pt(X,Y), is constant element)
+        # "t": [float](time for angle a),
+        # "dt": [float](sept of time for angle a, is constant element)
         # Do not forget and respect the keys names
+
+        # get the delta time to discretize the signal
+        delta_time = time / n
+
+        # create a vector with all time steps
+        time_step = []
+        acum = 0.0
+        for i in range(int(n)):
+            time_step.append(acum)
+            acum += delta_time
+
+        # lists with all positions and velocities for each
+        # time are created and initialized
+        posx = [0.0] * len(time_step)
+        posy = [0.0] * len(time_step)
+        velx = [0.0] * len(time_step)
+        vely = [0.0] * len(time_step)
+
+        # initializes the first position of the list with
+        # the position where the path begins
+        posx[0] = src[0]
+        posy[0] = src[1]
+
+        # the maximum velocity of the trapezoid is found for each of the axes
+        vel_max_y = (src[1] - dst[1]) / (pt + (time - 2 * pt))
+        vel_max_x = (src[0] - dst[0]) / (pt + (time - 2 * pt))
+
+        # position and velocity are calculated for each
+        # of the time intervals and for each of the stages
+        for index in range(1, int(n)):
+            if index * delta_time <= pt:
+                velx[index] = time_step[index] / pt * vel_max_x
+                vely[index] = time_step[index] / pt * vel_max_y
+                posx[index] = posx[index - 1] - delta_time * velx[index - 1]
+                posy[index] = posy[index - 1] - delta_time * vely[index - 1]
+            elif index * delta_time > pt and index * delta_time < time - pt:
+                velx[index] = vel_max_x
+                vely[index] = vel_max_y
+                posx[index] = posx[index - 1] - delta_time * velx[index]
+                posy[index] = posy[index - 1] - delta_time * vely[index]
+            elif index * delta_time > time - pt:
+                velx[index] = (time - time_step[index]) / pt * vel_max_x
+                vely[index] = (time - time_step[index]) / pt * vel_max_y
+                posx[index] = posx[index - 1] - delta_time * velx[index - 1]
+                posy[index] = posy[index - 1] - delta_time * vely[index - 1]
+
+        # the waypoints are filled with the index of the position,
+        # the corresponding position with the time interval and the delta time
+        for index in range(int(n)):
+            way_points.append(
+                {
+                    "idx": index,
+                    "pt": (int(posx[index]), int(posy[index])),
+                    "t": time_step[index],
+                    "dt": delta_time,
+                }
+            )
 
         # ---------------------------------------------------------------------
 
@@ -515,6 +572,49 @@ class PlannerNode(Node):
         # "t": [float](time for angle a),
         # "dt": [float](sept of time for angle a, is constant element)
         # Do not forget and respect the keys names
+
+        # get the delta time to discretize the signal
+        delta_time = time / n
+
+        # create a vector with all time steps
+        time_step = []
+        acum = 0.0
+        for i in range(int(n)):
+            time_step.append(acum)
+            acum += delta_time
+
+        # lists with the positions and velocities
+        # for each time are created and initialized
+        pos = [0.0] * len(time_step)
+        vel = [0.0] * len(time_step)
+
+        # the maximum velocity of the trapezoid is found for the turn
+        vel_max = (pos[0] - dst) / (pt + (time - 2 * pt))
+
+        # position and velocity are calculated for each
+        # of the time intervals and for each of the stages
+        for index in range(1, int(n)):
+            if index * delta_time <= pt:
+                vel[index] = time_step[index] / pt * vel_max
+                pos[index] = pos[index - 1] - delta_time * vel[index - 1]
+            elif index * delta_time > pt and index * delta_time < time - pt:
+                vel[index] = vel_max
+                pos[index] = pos[index - 1] - delta_time * vel[index]
+            elif index * delta_time > time - pt:
+                vel[index] = (time - time_step[index]) / pt * vel_max
+                pos[index] = pos[index - 1] - delta_time * vel[index - 1]
+
+        # the turn points are filled with the index of the position,
+        # the corresponding position with the time interval and the delta time
+        for index in range(int(n)):
+            turn_points.append(
+                {
+                    "idx": index,
+                    "a": pos[index],
+                    "t": time_step[index],
+                    "dt": delta_time,
+                }
+            )
 
         # ---------------------------------------------------------------------
 
