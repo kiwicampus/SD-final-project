@@ -69,9 +69,9 @@ Please feel free to contact any of our developers for any questions and help, we
  
 * [Camilo Pinzón](https://www.linkedin.com/in/capinzonq/): `camilo.pinzon@kiwibot.com`
 
-* [Alejandro Naranjo](https://www.linkedin.com/in/alejandro-naranjo-z/): `alejandro.naranjo@kiwibot.com`
+* [Juan Manuel Valencia](https://www.linkedin.com/in/juan-manuel-v-b76815131/): `juan.valencia@kiwibot.com`
 
-* [Jeick Hincapie](https://www.linkedin.com/in/jeick-hincapi%C3%A9-barrera-133b961b0/): `jeick.hincapie@kiwibot.com`
+* [Francisco Valbuena](https://www.linkedin.com/in/francisco-javier-valbuena-ortega-90a56922b/): `francisco.valbuena@kiwibot.com`
 
 
 <br />
@@ -111,10 +111,8 @@ contributed to the project.  -->
  
 Meet our incredible team in charge of designing, building, manufacturing and giving life to our most loved friend the *Kiwibot*.
  
-<img src="https://user-images.githubusercontent.com/38380745/158037759-7e22bedf-b43e-46c1-97ba-5fac0f8c8743.png" alt="kiwi_ai_team" width="700">
  
- 
-🤖 **AI & Robotics**: [John Betancourt ](https://www.linkedin.com/in/john-betancourt-345557129/) [AI&Robotics Team Lead - Robotics Engineer], [Marcela Gomez](https://www.linkedin.com/in/marcela-gomez-cardona-7b2190161/) [QA and testing], [Davidson Daniel](https://www.linkedin.com/in/dadaroce/) [Ai & Robotics Engineer], [Rafael Rincon](https://www.linkedin.com/in/rafaelivanrinconfonseca371b1515a/) [Ai & Robotics Engineer], [Carlos Alvarez](https://www.linkedin.com/in/calvarez92/)[Senior ML Engineer], [Pedro Gonzalez](https://www.linkedin.com/in/pedro-alejandro-g-95655ba2/)[Ai & Robotics Engineer], [Camilo Pinzon](https://www.linkedin.com/in/capinzonq/)[Service Desk Lead], [Alejandro Naranjo](https://www.linkedin.com/in/alejandro-naranjo-z/)[Service Desk Engineer], [Jeick Hincapie](https://www.linkedin.com/in/jeick-hincapi%C3%A9-barrera-133b961b0/)[Service Desk Engineer]. 
+🤖 **AI & Robotics**: [John Betancourt ](https://www.linkedin.com/in/john-betancourt-345557129/) [AI&Robotics Team Lead - Robotics Engineer], [Marcela Gomez](https://www.linkedin.com/in/marcela-gomez-cardona-7b2190161/) [QA and testing], [Davidson Daniel](https://www.linkedin.com/in/dadaroce/) [Ai & Robotics Engineer], [Rafael Rincon](https://www.linkedin.com/in/rafaelivanrinconfonseca371b1515a/) [Ai & Robotics Engineer], [Carlos Alvarez](https://www.linkedin.com/in/calvarez92/)[Senior ML Engineer], [Pedro Gonzalez](https://www.linkedin.com/in/pedro-alejandro-g-95655ba2/)[Ai & Robotics Engineer], [Camilo Pinzon](https://www.linkedin.com/in/capinzonq/)[Service Desk Manager], [Juan Manuel Valencia](https://www.linkedin.com/in/juan-manuel-v-b76815131/)[Service Desk Engineer], [Francisco Valbuena](https://www.linkedin.com/in/francisco-javier-valbuena-ortega-90a56922b/)[Service Desk Engineer]. 
  
 There is also a huge team out of the engineering area which gives a lot of work for our *Kiwibot*. Even if they are not listed here, they are the key to achieve our goals as a company:
  

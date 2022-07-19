@@ -15,7 +15,7 @@ NAME: **WRITE YOUR NAME HERE**
 --------
 **BASIC POINTS**:
 
-Here are the basic points to accomplish the project, what we are evaluating you is the knowledge in python, GCP API's,  ROS2 in a basic level of concepts and implementation, and also a speed and turn profile implementation. This part of the project is more for the understanding of itself because we invite you to make the extra-homework, which is the real challenge, where you'll have to be more creative and go further. 
+Here are the basic points to accomplish the project, what we are evaluating you is the knowledge in python, GCP API's,  ROS2 in a basic level of concepts and implementation. This part of the project is more for the understanding of itself because we invite you to make the extra-homework, which is the real challenge, where you'll have to be more creative and go further. 
 
 Well, the recommendation in this section is to start with the python nodes. You won't have to change the input or output attributes in any function or method, just implement functions contents, and operations, import a library and use it inside. 
 
@@ -57,7 +57,7 @@ For the second part of the basics we want to assess the use of API's and informa
 
 In this part you will need to install new libraries or dependencies. Be careful, there are many ways you could install a simple package, but we hope you do it in an elegant and containerized way.
 
-1. **Generate [GCP](https://cloud.google.com/https://cloud.google.com/) credentials:** If you don't have an account generate one. You don't need to have billing activated, it will only be used in a basic way. The credentials can be saved anywhere you want (BE CAREFUL, DO NOT COMMIT OR PUSH YOUR CREDENTIALS).
+1. **Generate [GCP](https://cloud.google.com/) credentials:** If you don't have an account generate one. You don't need to have billing activated, it will only be used in a basic way. The credentials can be saved anywhere you want (BE CAREFUL, DO NOT COMMIT OR PUSH YOUR CREDENTIALS).
 
 2. **Authenticate credentials:** You must analyze the stack and decide in which scripts you must authenticate the credentials to be able to use the API later, keep in mind that the place you choose is because you want to get/upload information to google sheets. We use the following library: https://google-auth.readthedocs.io/en/master/
 

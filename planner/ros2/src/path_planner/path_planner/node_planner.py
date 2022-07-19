@@ -469,16 +469,6 @@ class PlannerNode(Node):
 
         way_points = []
 
-        # ---------------------------------------------------------------------
-        # TODO: Trapezoidal speed profile
-        # Add your solution here, remeber that every element in the list is a dictionary
-        # where every element in has the next structure and data type:
-        # "idx": [int](index of the waypoint),
-        # "pt": [tuple][int](x and y axis positions in the image space),
-        # "t": [float](time for position pt(X,Y)),
-        # "dt": [float](sept of time for position pt(X,Y), is constant element)
-        # Do not forget and respect the keys names
-
         # get the delta time to discretize the signal
         delta_time = time / n
 
@@ -562,16 +552,6 @@ class PlannerNode(Node):
         turn_points = []
         if dst == 0.0:
             return turn_points
-
-        # ---------------------------------------------------------------------
-        # TODO: Trapezoidal turn profile
-        # Add your solution here, remeber that every element in the list is a dictionary
-        # where every element in has the next structure and data type:
-        # "idx": [int](index of the waypoint),
-        # "a": [float](yaw angle of the robot),
-        # "t": [float](time for angle a),
-        # "dt": [float](sept of time for angle a, is constant element)
-        # Do not forget and respect the keys names
 
         # get the delta time to discretize the signal
         delta_time = time / n
