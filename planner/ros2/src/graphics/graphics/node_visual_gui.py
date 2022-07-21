@@ -84,7 +84,7 @@ class VisualsNode(Thread, Node):
         self.path_planner_status_subscriber = self.create_subscription(
             msg_type=self.msg_planner,
             topic='/path_planner/msg',
-            qos_profile=1,
+            qos_profile=qos_profile_sensor_data,
             callback=self.cb_path_planner,
         )
 
@@ -94,7 +94,7 @@ class VisualsNode(Thread, Node):
         self.kiwibot_status_subscriber = self.create_subscription(
             msg_type=self.msg_kiwibot,
             topic='/kiwibot/status',
-            qos_profile=1,
+            qos_profile=qos_profile_sensor_data,
             callback=self.cb_kiwibot_status,
         )
 
