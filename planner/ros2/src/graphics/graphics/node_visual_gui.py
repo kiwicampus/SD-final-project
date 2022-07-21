@@ -310,7 +310,6 @@ class VisualsNode(Thread, Node):
             flags=cv2.INTER_CUBIC,
         )
 
-    # TODO: Draw the robot
     def draw_robot(
         self, l_img: np.ndarray, s_img: np.ndarray, pos: tuple, transparency=1.0
     ) -> np.ndarray:
@@ -405,7 +404,6 @@ class VisualsNode(Thread, Node):
 
         return win_img
 
-    # TODO: Drawing map descriptors
     def draw_descriptors(self, land_marks: list) -> None:
         """
             Draws maps keypoints in map image
@@ -416,8 +414,14 @@ class VisualsNode(Thread, Node):
         """
 
         # -----------------------------------------
-        # Insert you solution here
-        pass
+        # Iterate over the landmark list and draw a circle using opencv
+        for landmark in land_marks:
+            cv2.circle(img=self._win_background,
+            center=(landmark.x,landmark.y),
+            radius=10,
+            thickness=2,
+            color=(0, 0, 255),
+            )
 
         # -----------------------------------------
 
