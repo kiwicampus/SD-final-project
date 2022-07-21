@@ -81,11 +81,13 @@ class VisualsNode(Thread, Node):
         # Subscribers
 
         self.msg_planner = planner_msg()
-        # TODO: Implement the path planner status subscriber,
-        # topic name: "/path_planner/msg"
-        # message type: planner_msg
-        # callback:cb_path_planner
-        # add here your solution
+        self.path_planner_status = self.create_subscription(
+            msg_type=self.msg_planner,
+            topic='/path_planner/msg',
+            qos_profile=1,
+            callback=self.cb_path_planner,
+        )
+
 
         # ------------------------------------------
         # TODO: Implement the Kiwibot status subscriber,
@@ -103,13 +105,13 @@ class VisualsNode(Thread, Node):
 
         # Publisher for activating the routines
         # Uncomment
-        # self.msg_path_number = Int32()
-        # self.pub_start_routine = self.create_publisher(
-        #     msg_type=Int32,
-        #     topic="/graphics/start_routine",
-        #     qos_profile=1,
-        #     callback_group=self.callback_group,
-        # )
+        self.msg_path_number = Int32()
+        self.pub_start_routine = self.create_publisher(
+            msg_type=Int32,
+            topic="/graphics/start_routine",
+            qos_profile=1,
+            callback_group=self.callback_group,
+        )
 
         # ---------------------------------------------------------------------
         self.damon = True
