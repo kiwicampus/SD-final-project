@@ -25,7 +25,7 @@ from rclpy.qos import qos_profile_sensor_data
 from rclpy.logging import get_logger
 from rclpy.node import Node
 
-from utils.python_utils import printlog
+from utils.python_utils import overlay_image, printlog
 from utils.python_utils import print_list_text
 
 from usr_msgs.msg import Planner as planner_msg
@@ -327,7 +327,13 @@ class VisualsNode(Thread, Node):
 
         # -----------------------------------------
         # Insert you solution here
-
+        l_img = overlay_image(
+            s_img=s_img,
+            l_img=l_img,
+            pos=pos,
+            transparency=1.0,
+            src_center=True,
+            )
         return l_img  # remove this line when implement your solution
 
         # -----------------------------------------
@@ -346,11 +352,11 @@ class VisualsNode(Thread, Node):
         # Get a valid window where the robot is in the map
         win_img, robot_coord = self.crop_map(coord=coord)
 
-        # Draws robot in maps image
-        # if coord[0] and coord[1]:
-        #     win_img = self.draw_robot(
-        #         l_img=win_img, s_img=self._kiwibot_img, pos=robot_coord
-        #     )
+        #Draws robot in maps image
+        if coord[0] and coord[1]:
+            win_img = self.draw_robot(
+                l_img=win_img, s_img=self._kiwibot_img, pos=robot_coord
+            )
 
         # Draw descriptions
         str_list = [
