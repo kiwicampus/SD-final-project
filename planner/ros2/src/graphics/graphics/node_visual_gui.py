@@ -90,11 +90,6 @@ class VisualsNode(Thread, Node):
 
 
         # ------------------------------------------
-        # TODO: Implement the Kiwibot status subscriber,
-        # topic name: "/kiwibot/status"
-        # message type: kiwibot_msg
-        # callback:cb_kiwibot_status
-        # add here your solution
         self.msg_kiwibot = kiwibot_msg()
         self.kiwibot_status_subscriber = self.create_subscription(
             msg_type=self.msg_kiwibot,
@@ -458,11 +453,11 @@ class VisualsNode(Thread, Node):
                     continue
                 # Key1=1048633 & Key9=1048625
                 elif key >= 49 and key <= 57:
-                    printlog(
-                        msg=f"Code is broken here",
-                        msg_type="WARN",
-                    )
-                    continue
+                    # printlog(
+                    #     msg=f"Code is broken here",
+                    #     msg_type="WARN",
+                    # )
+                    # continue
                     printlog(
                         msg=f"Routine {chr(key)} was sent to path planner node",
                         msg_type="INFO",
