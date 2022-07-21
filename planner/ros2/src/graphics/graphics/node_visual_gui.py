@@ -81,7 +81,7 @@ class VisualsNode(Thread, Node):
         # Subscribers
 
         self.msg_planner = planner_msg()
-        self.path_planner_status = self.create_subscription(
+        self.path_planner_status_subscriber = self.create_subscription(
             msg_type=self.msg_planner,
             topic='/path_planner/msg',
             qos_profile=1,
@@ -96,6 +96,13 @@ class VisualsNode(Thread, Node):
         # callback:cb_kiwibot_status
         # add here your solution
         self.msg_kiwibot = kiwibot_msg()
+        self.kiwibot_status_subscriber = self.create_subscription(
+            msg_type=self.msg_kiwibot,
+            topic='/kiwibot/status',
+            qos_profile=1,
+            callback=self.cb_kiwibot_status,
+        )
+
         self.turn_robot(heading_angle=float(os.getenv("BOT_INITIAL_YAW", default=0.0)))
         self.msg_kiwibot.pos_x = int(os.getenv("BOT_INITIAL_X", default=917))
         self.msg_kiwibot.pos_y = int(os.getenv("BOT_INITIAL_Y", default=1047))
