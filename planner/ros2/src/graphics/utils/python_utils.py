@@ -165,7 +165,7 @@ import gspread
 from datetime import datetime
 
 class GSheetWriter():
-    def __init__(self, index=1):
+    def __init__(self, index=2):
         # Change to load with g_auth
         self._filename = '/workspace/planner/creds/caramel-logic-295802-ca4ef81bcc62.json'
         self.gc = gspread.service_account(filename=self._filename)
