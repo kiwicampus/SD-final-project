@@ -117,7 +117,17 @@ Respond below every questions:
 
 9. [Docker] Can we change the basic image (`FROM ubuntu:20.04`) from the docker file to another?
 
-10. [General] Why is it not a good idea to upload the API credentials to github and why if they are already uploaded is it not a good idea to simply delete them from your repo?
+10. [Bash] on the script `configs/startPlanner.sh` what is the purpose of `$1` and
+    `$2` variables
+
+11. [Bash] on the script `configs/startPlanner.sh` which line load the
+    environment variables?
+
+12. [Bash] What does the command `find /workspace -name node_planner.py` do?
+
+13. [Docker & Bash] What is the purpose of `curl` in the docker file?
+
+14. [General] Why is it not a good idea to upload the API credentials to github and why if they are already uploaded is it not a good idea to simply delete them from your repo?
 
 
 Next questions is after you finish the project, it doesn't give points but we really appreciate you feedback:
@@ -131,22 +141,23 @@ For extra homework we recommend you create a new branch from the developed one w
 
 1. **[+5%/5.0]**: Modify the docker file to source ROS2 and have autocompleted commands like ```ros2 topic list```.
 2. **[+5%/5.0]**: Make that the Kiwibot image doesn't get distorted when is turning.
-3. **[+10%/5.0]**: In the GUI, there's an empty field with the `Porc:???%` value. Find a way to print there the % of the total distance of the routine that the robot has traveled.
-<img height="300" src="https://user-images.githubusercontent.com/38380745/143324697-a06fb3ae-de62-4d42-8373-0da62e68a314.png">
+3. **[+5%/5.0]**: Create a script to launch the docker from terminal.
+4. **[+10%/5.0]**: In the GUI, there's an empty field with the `Porc:???%` value. Find a way to print there the % of the total distance of the routine that the robot has traveled.
+<img height="301" src="https://user-images.githubusercontent.com/38380745/143324697-a06fb3ae-de62-4d42-8373-0da62e68a314.png">
 
-4. **[+10%/5.0]**: Implement a method or way to stop the routine (with a key).
+5. **[+10%/5.0]**: Implement a method or way to stop the routine (with a key).
 
-5. **[+10%/5.0]**: Have the full data downloaded from the gsheet and saved in a .csv file each time the container is opened.
+6. **[+10%/5.0]**: Have the full data downloaded from the gsheet and saved in a .csv file each time the container is opened.
 
-6. **[+20%/5.0]**: Update the data from the gsheet every time the routine is paused or the robot reach a waypoint with the percent data form the point 4 (create a new column for this field). You must update the row of the current routine, not create a new row.
+7. **[+20%/5.0]**: Update the data from the gsheet every time the routine is paused or the robot reach a waypoint with the percent data form the point 4 (create a new column for this field). You must update the row of the current routine, not create a new row.
 
-7. **[+15%/5.0]:** Here you could add a new "completed" column, and define it as 1 -> completed routines or 0 -> uncompleted routines.
+8. **[+10%/5.0]:** Here you could add a new "completed" column, and define it as 1 -> completed routines or 0 -> uncompleted routines.
 
-8. **[+10%/5.0]**: Filter the information in the google sheet table by routine and generate a chart with the total distance traveled.
+9. **[+10%/5.0]**: Filter the information in the google sheet table by routine and generate a chart with the total distance traveled.
 
-9. **[+10%/5.0]**: Add the previous chart the option to show the completed and uncompleted routines.
+10. **[+10%/5.0]**: Add the previous chart the option to show the completed and uncompleted routines.
 
-10. **[+5%/5.0]**: (Question) What happens if we change some element of the google sheets sheet for example: file name, time name, sheet position, etc?
+11. **[+5%/5.0]**: (Question) What happens if we change some element of the google sheets sheet for example: file name, time name, sheet position, etc?
 
 Total possible Extra points: 100% -> 5.0. Maximum total grade: 10.0/5.0. Complete the point it doesn't mean you have 5.0, you have at least 3.0 but for the rest of the grade will evaluate the performance and the beauty of your solution. To complete these points, probably you will have to modify messages, services, or even create new ones, also topics subscribers and publishers, maybe services, who knows :)
 
